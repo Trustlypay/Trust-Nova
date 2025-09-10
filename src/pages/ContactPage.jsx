@@ -1,56 +1,104 @@
-import React from "react";
-import { Footer, Navbar } from "../components";
+import { Form, Input } from "antd";
+
 const ContactPage = () => {
+  const [form] = Form.useForm();
+
+  const onFinish = (values) => {
+    console.log("Success:", values);
+    form.resetFields();
+  };
+
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+    form.resetFields();
+  };
+
   return (
     <>
-      <Navbar />
-      <div className="container my-3 py-3">
-        <h1 className="text-center">Contact Us</h1>
-        <hr />
-        <div class="row my-4 h-100">
-          <div className="col-md-4 col-lg-4 col-sm-8 mx-auto">
-            <form>
-              <div class="form my-3">
-                <label for="Name">Name</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="Name"
-                  placeholder="Enter your name"
+      <div
+        style={{
+          padding: "4% 12%",
+          display: "flex",
+          flexDirection: "column",
+          gap: "32px",
+        }}
+      >
+        <div>
+          <h1 className="heading-1" style={{ marginBottom: "24px" }}>
+            Contact Us
+          </h1>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "18px",
+            }}
+          >
+            <p>
+              <strong>Address:</strong>
+              <span>&nbsp;</span>A2 312 Palladium Corpora, RD BHD Divyabhaskar
+              Press, <br /> Jivraj Park, Ahmedabad City – 380051, Gujarat
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <span>&nbsp;</span>Info@onestopfashionhub.com
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <span> &nbsp;+91 8247648184</span>
+            </p>
+          </div>
+        </div>
+        <div className="my-3 h-px bg-zinc-500" />
+        <div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <h2 className="heading-2" style={{ marginBottom: "12px" }}>
+              Contact form
+            </h2>
+            <Form
+              form={form}
+              name="basic"
+              initialValues={{ remember: true }}
+              onFinish={onFinish}
+              onFinishFailed={onFinishFailed}
+              autoComplete="off"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                width: "600px",
+              }}
+            >
+              <Form.Item name="Name">
+                <Input placeholder="Enter Name" />
+              </Form.Item>
+              <Form.Item name="Email">
+                <Input placeholder="Enter Email" />
+              </Form.Item>
+              <Form.Item name="Phone Number">
+                <Input placeholder="Enter Phone Number" />
+              </Form.Item>
+              <Form.Item name="Comment">
+                <Input.TextArea
+                  autoSize={{ minRows: 3, maxRows: 3 }}
+                  placeholder="Enter Comment"
                 />
-              </div>
-              <div class="form my-3">
-                <label for="Email">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="Email"
-                  placeholder="name@example.com"
-                />
-              </div>
-              <div class="form  my-3">
-                <label for="Password">Message</label>
-                <textarea
-                  rows={5}
-                  class="form-control"
-                  id="Password"
-                  placeholder="Enter your message"
-                />
-              </div>
-              <div className="text-center">
-                <button
-                  class="my-2 px-4 mx-auto btn btn-dark"
-                  type="submit"
-                  disabled
-                >
-                  Send
+              </Form.Item>
+
+              <Form.Item label={null}>
+                <button className="btn btn-outline-light btn-sbuttonm m-2">
+                  Submit
                 </button>
-              </div>
-            </form>
+              </Form.Item>
+            </Form>
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

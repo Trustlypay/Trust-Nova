@@ -1,67 +1,71 @@
-import React from 'react'
-import { Footer, Navbar } from "../components";
 const AboutPage = () => {
   return (
     <>
-      <Navbar />
-      <div className="container my-3 py-3">
-        <h1 className="text-center">About Us</h1>
-        <hr />
-        <p className="lead text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          facere doloremque veritatis odit similique sequi. Odit amet fuga nam
-          quam quasi facilis sed doloremque saepe sint perspiciatis explicabo
-          totam vero quas provident ipsam, veritatis nostrum velit quos
-          recusandae est mollitia esse fugit dolore laudantium. Ex vel explicabo
-          earum unde eligendi autem praesentium, doloremque distinctio nesciunt
-          porro tempore quis eaque labore voluptatibus ea necessitatibus
-          exercitationem tempora molestias. Ad consequuntur veniam sequi ullam
-          tempore vel tenetur soluta dolore sunt maxime aliquam corporis est,
-          quo saepe dolorem optio minus sint nemo totam dolorum! Reprehenderit
-          delectus expedita a alias nam recusandae illo debitis repellat libero,
-          quasi explicabo molestiae saepe, dolorem tempore itaque eveniet quam
-          dignissimos blanditiis excepturi harum numquam vel nihil? Ipsum
-        </p>
-
-        <h2 className="text-center py-4">Our Products</h2>
-        <div className="row">
-          <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Mens's Clothing</h5>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Women's Clothing</h5>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Jewelery</h5>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Electronics</h5>
-              </div>
-            </div>
-          </div>
+      <div
+        style={{
+          padding: "4% 12%",
+          display: "flex",
+          flexDirection: "column",
+          gap: "6px",
+        }}
+      >
+        <strong className="heading-1">About Us</strong>
+        <div style={{ display: "flex", flexDirection: "column", gap: "32px" }}>
+          <p>
+            <strong className="heading-2">
+              Style, Quality, and Comfort – All in One Place
+            </strong>
+          </p>
+          <p>
+            Welcome to <strong>One Stop Fashion Hub</strong>, your premier
+            destination for trendy, affordable, and high-quality fashion. Born
+            out of a love for style and a dedication to excellence, we bring you
+            a curated collection of apparel and accessories to elevate your
+            wardrobe. Whether you're looking for everyday staples or standout
+            pieces for special moments, One Stop Fashion Hub is here to make
+            your shopping experience effortless and stylish.
+          </p>
+          <p>
+            <strong className="heading-2">Our Mission</strong>
+          </p>
+          <p>
+            At <strong>One Stop Fashion Hub</strong>, we’re passionate about
+            making fashion accessible and exciting for everyone. We handpick
+            every item in our collection to reflect the latest trends while
+            meeting rigorous standards of quality and comfort. Our mission is to
+            provide not just clothing but an experience that blends value,
+            style, and outstanding customer service.
+          </p>
+          <p>
+            <strong className="heading-2">
+              Why Choose One Stop Fashion Hub?
+            </strong>
+          </p>
+          <p>
+            We’re here to empower your unique sense of style. Explore our
+            wide-ranging collections, from chic casuals to sophisticated
+            formalwear, and find pieces that resonate with your personality.
+            With exclusive deals, reliable shipping, and a customer-friendly
+            return policy, your satisfaction is our priority.
+          </p>
+          <p>
+            <strong>One Stop Fashion Hub</strong>{" "}
+            <span>
+              shopping website was launched in 2023 with the goal of enhancing
+              the customer shopping experience and encouraging further
+              purchases.
+            </span>
+          </p>
+          <p>
+            <strong>One Stop Fashion Hub</strong> – Your fashion journey starts
+            here. From cozy everyday outfits to glamorous attire for life’s big
+            occasions, we offer something for every taste, need, and budget. Let
+            us inspire your wardrobe with confidence and flair.
+          </p>
         </div>
       </div>
-      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;
