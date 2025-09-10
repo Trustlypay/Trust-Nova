@@ -9,7 +9,6 @@ import { DATA } from "../products";
 
 const Products = () => {
   const [filter, setFilter] = useState(DATA);
-
   const dispatch = useDispatch();
 
   const addProduct = (product) => {
