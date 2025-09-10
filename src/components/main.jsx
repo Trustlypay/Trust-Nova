@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Home = () => {
+const Main = () => {
   return (
     <div className="card bg-dark text-white">
       <div
@@ -24,4 +24,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Main;

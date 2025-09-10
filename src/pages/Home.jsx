@@ -1,10 +1,11 @@
-import { Main, Product } from "../components";
+import Main from "../components/main";
+import Products from "../components/Products";
 
 function Home() {
   return (
     <>
       <Main />
-      <Product />
+      <Products />
     </>
   );
 }

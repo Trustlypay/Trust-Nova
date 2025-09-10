@@ -5,7 +5,7 @@ import "./index.css";
 import {
   Home,
   Product,
-  Products,
+  ProductsPage,
   AboutPage,
   ContactPage,
   Cart,
@@ -14,7 +14,7 @@ import {
   Checkout,
   PageNotFound,
 } from "./pages";
-import { Navbar } from "./components";
+import Navbar from "./components/Navbar";
 
 export default function App() {
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product" element={<Products />} />
+        <Route path="/product" element={<ProductsPage />} />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
