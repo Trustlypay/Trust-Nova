@@ -30,7 +30,7 @@ const Navbar = () => {
 
         <NavLink className="navbar-brand fw-bold fs-4 mx-auto" to="/">
           <img
-            src="./assets/trust_nova_logo.jpg"
+            src="/assets/trust_nova_logo.jpg"
             alt="Card"
             style={{ height: "18px" }}
           />

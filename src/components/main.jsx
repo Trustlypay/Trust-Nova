@@ -8,7 +8,7 @@ const Main = () => {
         style={{
           height: "90vh",
           backgroundImage:
-            'linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(68, 88, 64, 0.6)), url("./assets/trustnova.jpg")',
+            'linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(68, 88, 64, 0.6)), url("/assets/trustnova.jpg")',
           backgroundPosition: "center",
         }}
       />

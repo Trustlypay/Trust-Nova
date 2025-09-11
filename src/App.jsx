@@ -20,6 +20,8 @@ import RefundPolicy from "./pages/Refund-Policy";
 import TermsOfService from "./pages/Terms-Of-Service";
 import ShippingPolicy from "./pages/Shipping-Policy";
 import PrivacyPolicy from "./pages/Privacy-Policy";
+import DataRetentionPolicy from "./pages/Data-Retention-Policy";
+import CancellationPolicy from "./pages/Cancellation-Policy";
 
 export default function App() {
   const navigate = useNavigate();
@@ -59,6 +61,11 @@ export default function App() {
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/shipping-policy" element={<ShippingPolicy />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route
+          path="/data-retention-policy"
+          element={<DataRetentionPolicy />}
+        />
+        <Route path="/cancellation-policy" element={<CancellationPolicy />} />
       </Routes>
       {token && (
         <footer className="custom-class">
@@ -180,6 +187,7 @@ export default function App() {
                 navigate("/privacy-policy");
                 window.scrollTo({ top: 0, behavior: "instant" });
               }}
+              className="hover-underline cursor-pointer"
             >
               Privacy Policy
             </small>
