@@ -4,15 +4,12 @@ import "../node_modules/font-awesome/css/font-awesome.min.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import ReactQueryClient from "./components/queryclient";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ReactQueryClient>
-        <App />
-      </ReactQueryClient>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );

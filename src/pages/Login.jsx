@@ -1,27 +1,25 @@
 import { useState } from "react";
 import { Form, Input } from "antd";
-import { useLogin } from "../service/user.service.hook";
 import { NavLink, useNavigate } from "react-router-dom";
+import { userService } from "../service/user.service";
 
 const Login = () => {
   const navigate = useNavigate();
   const [form] = Form.useForm();
   const [error, setError] = useState(null);
-  const { mutateAsync: loginMutate } = useLogin();
 
   const onFinish = () => {
     void form.validateFields().then(async () => {
-      loginMutate({
-        email: form.getFieldValue("Email"),
-        password: form.getFieldValue("Password"),
-        onSuccess: (data) => {
-          localStorage.setItem("token", data.token);
+      userService
+        .login(form.getFieldValue("Email"), form.getFieldValue("Password"))
+        .then((res) => {
+          localStorage.setItem("token", res?.token);
           navigate("/");
-        },
-        onError: (data) => {
-          setError(data.response.data.error);
-        },
-      });
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error?.response?.data?.error);
+        });
     });
   };
 

@@ -1,29 +1,31 @@
 import { useState } from "react";
-import { useSignIn } from "../service/user.service.hook";
 import { Form, Input, message } from "antd";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { userService } from "../service/user.service";
 
 const Register = () => {
   const [form] = Form.useForm();
   const [error, setError] = useState(null);
-
-  const { mutateAsync: signInMutate } = useSignIn();
+  const navigate = useNavigate();
   const [messageApi, contextHolder] = message.useMessage();
 
   const onFinish = () => {
     void form.validateFields().then(async () => {
-      signInMutate({
-        email: form.getFieldValue("Email"),
-        phoneNumber: form.getFieldValue("Phone Number"),
-        userName: form.getFieldValue("User Name"),
-        password: form.getFieldValue("Password"),
-        onSuccess: (data) => {
-          messageApi.success("User Created Successfully");
-        },
-        onError: (data) => {
-          setError(data.response.data.error);
-        },
-      });
+      userService
+        .signIn(
+          form.getFieldValue("Email"),
+          form.getFieldValue("Phone Number"),
+          form.getFieldValue("User Name"),
+          form.getFieldValue("Password")
+        )
+        .then((res) => {
+          messageApi.success("Registred Successfully");
+          navigate("/login");
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error?.response?.data?.error);
+        });
     });
   };
 
