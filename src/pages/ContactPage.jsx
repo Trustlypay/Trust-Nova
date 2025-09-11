@@ -24,9 +24,9 @@ const ContactPage = () => {
         }}
       >
         <div>
-          <h1 className="heading-1" style={{ marginBottom: "24px" }}>
+          <p className="heading-1" style={{ marginBottom: "24px" }}>
             Contact Us
-          </h1>
+          </p>
           <div
             style={{
               display: "flex",
@@ -34,18 +34,21 @@ const ContactPage = () => {
               gap: "18px",
             }}
           >
+            <p className="heading-2">
+              TrustlyPay Financial Technology Private Limited
+            </p>
             <p>
               <strong>Address:</strong>
-              <span>&nbsp;</span>A2 312 Palladium Corpora, RD BHD Divyabhaskar
-              Press, <br /> Jivraj Park, Ahmedabad City – 380051, Gujarat
+              <span>&nbsp;</span>Plot No 4/2, Sector 1, Madhapur, HUDA Techno
+              Enclave, HITEC City, <br /> Hyderabad, Telangana - 500081
             </p>
             <p>
               <strong>Email:</strong>
-              <span>&nbsp;</span>Info@onestopfashionhub.com
+              <span>&nbsp;</span>info@trustnova.com
             </p>
             <p>
               <strong>Phone:</strong>
-              <span> &nbsp;+91 8247648184</span>
+              <span> &nbsp;+91-8247 648 184</span>
             </p>
           </div>
         </div>

@@ -2,7 +2,7 @@ import { AxiosX } from "../utils/axios";
 
 export const userService = {
   login: async (email, password) => {
-    const response = await AxiosX.post(`/gateway/onestop/user/signin`, {
+    const response = await AxiosX.post(`/user/signin`, {
       email,
       password,
     });
@@ -10,8 +10,8 @@ export const userService = {
     return response.data;
   },
 
-  signIn: async (email, password, phoneNumber, userName) => {
-    const response = await AxiosX.post(`/gateway/onestop/user/signup`, {
+  signIn: async (email, phoneNumber, userName, password) => {
+    const response = await AxiosX.post(`/user/signup`, {
       email,
       phoneNumber,
       userName,
@@ -22,7 +22,7 @@ export const userService = {
   },
 
   paymentLink: async (amount, description) => {
-    const response = await AxiosX.post(`/gateway/onestop/payment/create-link`, {
+    const response = await AxiosX.post(`/payment/create-link`, {
       amount,
       description,
     });
@@ -31,7 +31,7 @@ export const userService = {
   },
 
   getCurrentUser: async () => {
-    const response = await AxiosX.get(`/gateway/onestop/user/details`);
+    const response = await AxiosX.get(`/user/details`);
 
     return response.data;
   },

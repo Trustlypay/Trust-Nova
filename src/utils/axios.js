@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BASE_API_URL = "https://onestopfashionhub.com/api/";
+export const BASE_API_URL = "https://www.trustlypay.com/api/gateway/tp/";
 
 const Axios = axios.create({
   baseURL: BASE_API_URL,

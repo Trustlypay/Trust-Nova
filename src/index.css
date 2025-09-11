@@ -1,15 +1,10 @@
 #root {
-  background-color: #121212;
   color: white;
   font-family: Arial, sans-serif;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
 }
 
 .custom-class {
   margin-top: 48px;
-  border-top: 1px solid #e5e7eb;
   background-color: #000000;
   color: #71717a;
 }
@@ -47,4 +42,16 @@
   padding: 30px;
   border-radius: 15px;
   margin: 200px auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.margin {
+  margin: auto 200px;
 }

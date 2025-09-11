@@ -6,7 +6,6 @@ import {
   Home,
   Product,
   ProductsPage,
-  AboutPage,
   ContactPage,
   Cart,
   Login,
@@ -17,6 +16,10 @@ import {
 import Navbar from "./components/Navbar";
 import { useEffect } from "react";
 import dayjs from "dayjs";
+import RefundPolicy from "./pages/Refund-Policy";
+import TermsOfService from "./pages/Terms-Of-Service";
+import ShippingPolicy from "./pages/Shipping-Policy";
+import PrivacyPolicy from "./pages/Privacy-Policy";
 
 export default function App() {
   const navigate = useNavigate();
@@ -46,14 +49,16 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<ProductsPage />} />
         <Route path="/product/:id" element={<Product />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/cart" element={<Cart />} />
         {!token && <Route path="/login" element={<Login />} />}
         <Route path="/register" element={<Register />} />
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="*" element={<Login />} />
         <Route path="/product/*" element={<PageNotFound />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/shipping-policy" element={<ShippingPolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       {token && (
         <footer className="custom-class">
@@ -96,7 +101,7 @@ export default function App() {
                   <div
                     className="hover-underline cursor-pointer"
                     onClick={() => {
-                      navigate("/products");
+                      navigate("/product");
                       window.scrollTo({ top: 0, behavior: "instant" });
                     }}
                   >
@@ -160,23 +165,24 @@ export default function App() {
               </div>
             </div>
           </div>
-
+          <hr />
           <div
             style={{
               display: "flex",
               justifyContent: "center",
+              gap: "10px",
+              padding: "10px",
             }}
           >
-            <small>© 2025,</small>
-            <div
-              className="hover-underline cursor-pointer"
+            <small>© 2025,Trust Nova </small>
+            <small
               onClick={() => {
                 navigate("/privacy-policy");
                 window.scrollTo({ top: 0, behavior: "instant" });
               }}
             >
               Privacy Policy
-            </div>
+            </small>
           </div>
         </footer>
       )}

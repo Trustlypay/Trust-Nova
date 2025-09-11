@@ -54,7 +54,6 @@ const Login = () => {
               { type: "email" },
               { whitespace: true },
             ]}
-            initialValue="kiran@123456.com" // TODO - remove this
           >
             <Input placeholder="Enter Email Address" variant="underlined" />
           </Form.Item>
@@ -66,7 +65,6 @@ const Login = () => {
                 message: "Please input your Password!",
               },
             ]}
-            initialValue="qwertyuiop" // TODO - remove this
           >
             <Input.Password placeholder="Enter Password" variant="underlined" />
           </Form.Item>
