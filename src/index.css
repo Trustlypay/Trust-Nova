@@ -1,7 +1,10 @@
 #root {
-  background-color: #282c34;
+  background-color: #121212;
   color: white;
   font-family: Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 }
 
 .custom-class {
@@ -36,4 +39,12 @@
 .heading-3 {
   font-size: 18px;
   font-weight: 700;
+}
+
+.wrapper {
+  max-width: 390px;
+  background: #242833;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 200px auto;
 }

@@ -45,7 +45,13 @@ const Navbar = () => {
             <NavLink to="/cart" className="btn btn-outline-light m-1">
               <i className="fa fa-cart-shopping me-1"></i> Cart ({state.length})
             </NavLink>
-            <NavLink to="/login" className="btn btn-outline-light m-1">
+            <NavLink
+              to="/login"
+              className="btn btn-outline-light m-1"
+              onClick={() => {
+                localStorage.removeItem("token");
+              }}
+            >
               <i className="fa fa-sign-in-alt me-1"></i> LogOut
             </NavLink>
           </div>

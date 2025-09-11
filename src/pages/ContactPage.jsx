@@ -49,7 +49,7 @@ const ContactPage = () => {
             </p>
           </div>
         </div>
-        <div className="my-3 h-px bg-zinc-500" />
+        <hr />
         <div>
           <div
             style={{
