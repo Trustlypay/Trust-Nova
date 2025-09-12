@@ -1,8 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { Popover } from "antd";
+import { useContext } from "react";
+import UserContext from "./user-context";
 
 const Navbar = () => {
   const state = useSelector((state) => state.handleCart);
+  const { userDetails } = useContext(UserContext);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3">
@@ -41,15 +45,46 @@ const Navbar = () => {
             <NavLink to="/cart" className="btn btn-outline-light m-1">
               <i className="fa fa-cart-shopping me-1"></i> Cart ({state.length})
             </NavLink>
-            <NavLink
-              to="/login"
-              className="btn btn-outline-light m-1"
-              onClick={() => {
-                localStorage.removeItem("token");
-              }}
+            <Popover
+              placement="bottom"
+              title={
+                <div
+                  style={{
+                    padding: "18px 6px 0px 6px ",
+                    textAlign: "center",
+                  }}
+                >
+                  My Account
+                </div>
+              }
+              content={
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "6px",
+                    padding: "18px",
+                  }}
+                >
+                  <div>Name : {userDetails?.userName ?? ""}</div>
+                  <div>Email : {userDetails?.email ?? ""}</div>
+                  <div>Phone Number : {userDetails?.phoneNumber ?? ""}</div>
+                  <NavLink
+                    to="/login"
+                    className="btn btn-outline-dark m-1"
+                    onClick={() => {
+                      localStorage.removeItem("token");
+                    }}
+                  >
+                    <i className="fa fa-sign-in-alt me-1"></i> LogOut
+                  </NavLink>
+                </div>
+              }
             >
-              <i className="fa fa-sign-in-alt me-1"></i> LogOut
-            </NavLink>
+              <div className="btn btn-outline-light m-1">
+                <i class="fa-regular fa-user"></i>
+              </div>
+            </Popover>
           </div>
         </div>
       </div>

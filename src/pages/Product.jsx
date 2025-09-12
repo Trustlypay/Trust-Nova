@@ -7,6 +7,10 @@ import { addCart } from "../redux/action";
 import { DATA } from "../products";
 
 const Product = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const { id } = useParams();
   const [product, setProduct] = useState([]);
   const [similarProducts, setSimilarProducts] = useState([]);
