@@ -1,12 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Popover } from "antd";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import UserContext from "./user-context";
+import { DATA } from "../products";
 
 const Navbar = () => {
   const state = useSelector((state) => state.handleCart);
   const { userDetails } = useContext(UserContext);
+  const [value, setValue] = useState("");
+  const navigate = useNavigate();
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3">
@@ -31,17 +34,61 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-
-        <NavLink className="navbar-brand fw-bold fs-4 mx-auto" to="/">
+        <NavLink to="/">
           <img
             src="/assets/trust_nova_logo.jpg"
             alt="Card"
-            style={{ height: "18px" }}
+            style={{ height: "25px" }}
           />
         </NavLink>
 
         <div className="d-flex align-items-center">
           <div className="buttons text-center">
+            <Popover
+              placement="bottom"
+              open={value ? true : false}
+              content={
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "6px",
+                    padding: "18px",
+                  }}
+                >
+                  {DATA.filter((filteredItem) =>
+                    filteredItem.title.includes(value)
+                  ).length > 0 ? (
+                    DATA.filter((filteredItem) =>
+                      filteredItem.title.includes(value)
+                    ).map((item) => (
+                      <div
+                        className="heading-3"
+                        onClick={() => {
+                          navigate("/product/" + item.id);
+                          setValue("");
+                        }}
+                      >
+                        {item.title}{" "}
+                      </div>
+                    ))
+                  ) : (
+                    <div className="heading-3">no results for search</div>
+                  )}
+                </div>
+              }
+            >
+              <input
+                value={value}
+                type="text"
+                name="search"
+                placeholder="Search.."
+                onChange={(e) => {
+                  setValue(e.target.value);
+                }}
+              />
+            </Popover>
+
             <NavLink to="/cart" className="btn btn-outline-light m-1">
               <i className="fa fa-cart-shopping me-1"></i> Cart ({state.length})
             </NavLink>

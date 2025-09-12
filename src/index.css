@@ -56,3 +56,14 @@
 .margin {
   margin: auto 200px;
 }
+
+input[type="text"] {
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: white;
+  background-image: url("/public/assets/searchicon.png");
+  background-position: 3px;
+  background-repeat: no-repeat;
+  padding: 7px 7px 7px 25px;
+}
