@@ -24,14 +24,26 @@ import DataRetentionPolicy from "./pages/Data-Retention-Policy";
 import CancellationPolicy from "./pages/Cancellation-Policy";
 import { userService } from "./service/user.service";
 import UserContextProvider from "./components/user-context-provider";
+import PaymentSuccess from "./components/payment-success";
+import PaymentFailure from "./components/payment-failure";
 
 export default function App() {
   const navigate = useNavigate();
   const location = useLocation();
+  const [userDetails, setUserDetails] = useState();
 
   const token = localStorage.getItem("token");
 
   useEffect(() => {
+    userService
+      .getCurrentUser()
+      .then((res) => {
+        setUserDetails(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
     const parts = token?.split(".");
 
     if (parts && JSON.parse(atob(parts[1])).exp > dayjs().unix()) {
@@ -44,20 +56,6 @@ export default function App() {
       localStorage.removeItem("token");
       navigate("/login");
     }
-  }, [token]);
-
-  const [userDetails, setUserDetails] = useState();
-  useEffect(() => {
-    userService
-      .getCurrentUser()
-      .then((res) => {
-        console.log("res", res);
-        setUserDetails(res);
-        navigate("/");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
   }, [token]);
 
   return (
@@ -83,6 +81,24 @@ export default function App() {
             element={<DataRetentionPolicy />}
           />
           <Route path="/cancellation-policy" element={<CancellationPolicy />} />
+          <Route
+            path="/checkout/success"
+            element={
+              <PaymentSuccess
+                isModalOpenSuccess={true}
+                setIsModalOpenSuccess={() => false}
+              />
+            }
+          />
+          <Route
+            path="/checkout/error"
+            element={
+              <PaymentFailure
+                isModalOpenFail={true}
+                setIsModalOpenFail={() => false}
+              />
+            }
+          />
         </Routes>
         {token && (
           <footer className="custom-class">
@@ -183,7 +199,7 @@ export default function App() {
                         window.scrollTo({ top: 0, behavior: "instant" });
                       }}
                     >
-                      Data Retention
+                      Data Retention Policy
                     </div>
                   </div>
                 </div>

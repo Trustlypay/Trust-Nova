@@ -1,11 +1,12 @@
-import { Checkbox, Form, Input } from "antd";
-import React, { useContext, useState } from "react";
+import { Checkbox, Form, Input, Radio } from "antd";
+import { useContext, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import UserContext from "../components/user-context";
 import BillingAddress from "./Billing-Address";
 import SubmitButton from "../components/submit-button";
 import { userService } from "../service/user.service";
+import PaymentSuccess from "../components/payment-success";
 
 const Checkout = () => {
   const state = useSelector((state) => state.handleCart);
@@ -31,30 +32,35 @@ const Checkout = () => {
     const [billingAddress, setBillingAddress] = useState(true);
     const [submittable, setSubmittable] = useState(false);
     const [billingAddressForm] = Form.useForm();
-    const [enableAddress, setEnableAddress] = useState(false);
-    const [isModalOpen, setIsModalOpen] = useState();
+    const [isModalOpenSuccess, setIsModalOpenSuccess] = useState(false);
 
     const onFinish = (e) => {
       e.preventDefault();
       void form.validateFields().then(() => {
-        console.log("okay");
         if (!billingAddress) {
           void billingAddressForm.validateFields().then(() => {
-            userService.paymentLink(
-              Math.round(subtotal + shipping),
-              `${Math.round(subtotal + shipping)}`
-            );
-
-            setIsModalOpen(false);
-            setEnableAddress(true);
+            if (form.getFieldValue("Payment Option") === "UPI") {
+              userService
+                .paymentLink(
+                  Math.round(subtotal + shipping),
+                  `${Math.round(subtotal + shipping)}`
+                )
+                .then((data) => (window.location.href = data.short_url));
+            } else if (form.getFieldValue("Payment Option") === "COD") {
+              setIsModalOpenSuccess(true);
+            }
           });
         } else {
-          setIsModalOpen(false);
-          setEnableAddress(true);
-          userService.paymentLink(
-            Math.round(subtotal + shipping),
-            `${Math.round(subtotal + shipping)}`
-          );
+          if (form.getFieldValue("Payment Option") === "UPI") {
+            userService
+              .paymentLink(
+                Math.round(subtotal + shipping),
+                `${Math.round(subtotal + shipping)}`
+              )
+              .then((data) => (window.location.href = data.short_url));
+          } else if (form.getFieldValue("Payment Option") === "COD") {
+            setIsModalOpenSuccess(true);
+          }
         }
       });
     };
@@ -106,214 +112,6 @@ const Checkout = () => {
                   <h4 className="mb-0">Billing address</h4>
                 </div>
                 <div className="card-body">
-                  {/* <form className="needs-validation" novalidate>
-                    <div className="row g-3">
-                      <div className="col-sm-6 my-1">
-                        <label for="firstName" className="form-label">
-                          First name
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="firstName"
-                          placeholder=""
-                          required
-                        />
-                        <div className="invalid-feedback">
-                          Valid first name is required.
-                        </div>
-                      </div>
-
-                      <div className="col-sm-6 my-1">
-                        <label for="lastName" className="form-label">
-                          Last name
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="lastName"
-                          placeholder=""
-                          required
-                        />
-                        <div className="invalid-feedback">
-                          Valid last name is required.
-                        </div>
-                      </div>
-
-                      <div className="col-12 my-1">
-                        <label for="email" className="form-label">
-                          Email
-                        </label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="email"
-                          placeholder="you@example.com"
-                          required
-                        />
-                        <div className="invalid-feedback">
-                          Please enter a valid email address for shipping
-                          updates.
-                        </div>
-                      </div>
-
-                      <div className="col-12 my-1">
-                        <label for="address" className="form-label">
-                          Address
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="address"
-                          placeholder="1234 Main St"
-                          required
-                        />
-                        <div className="invalid-feedback">
-                          Please enter your shipping address.
-                        </div>
-                      </div>
-
-                      <div className="col-12">
-                        <label for="address2" className="form-label">
-                          Address 2{" "}
-                          <span className="text-muted">(Optional)</span>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="address2"
-                          placeholder="Apartment or suite"
-                        />
-                      </div>
-
-                      <div className="col-md-5 my-1">
-                        <label for="country" className="form-label">
-                          Country
-                        </label>
-                        <br />
-                        <select className="form-select" id="country" required>
-                          <option value="">Choose...</option>
-                          <option>India</option>
-                        </select>
-                        <div className="invalid-feedback">
-                          Please select a valid country.
-                        </div>
-                      </div>
-
-                      <div className="col-md-4 my-1">
-                        <label for="state" className="form-label">
-                          State
-                        </label>
-                        <br />
-                        <select className="form-select" id="state" required>
-                          <option value="">Choose...</option>
-                          <option>Punjab</option>
-                        </select>
-                        <div className="invalid-feedback">
-                          Please provide a valid state.
-                        </div>
-                      </div>
-
-                      <div className="col-md-3 my-1">
-                        <label for="zip" className="form-label">
-                          Zip
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="zip"
-                          placeholder=""
-                          required
-                        />
-                        <div className="invalid-feedback">
-                          Zip code required.
-                        </div>
-                      </div>
-                    </div>
-
-                    <hr className="my-4" />
-
-                    <h4 className="mb-3">Payment</h4>
-
-                    <div className="row gy-3">
-                      <div className="col-md-6">
-                        <label for="cc-name" className="form-label">
-                          Name on card
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="cc-name"
-                          placeholder=""
-                          required
-                        />
-                        <small className="text-muted">
-                          Full name as displayed on card
-                        </small>
-                        <div className="invalid-feedback">
-                          Name on card is required
-                        </div>
-                      </div>
-
-                      <div className="col-md-6">
-                        <label for="cc-number" className="form-label">
-                          Credit card number
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="cc-number"
-                          placeholder=""
-                          required
-                        />
-                        <div className="invalid-feedback">
-                          Credit card number is required
-                        </div>
-                      </div>
-
-                      <div className="col-md-3">
-                        <label for="cc-expiration" className="form-label">
-                          Expiration
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="cc-expiration"
-                          placeholder=""
-                          required
-                        />
-                        <div className="invalid-feedback">
-                          Expiration date required
-                        </div>
-                      </div>
-
-                      <div className="col-md-3">
-                        <label for="cc-cvv" className="form-label">
-                          CVV
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="cc-cvv"
-                          placeholder=""
-                          required
-                        />
-                        <div className="invalid-feedback">
-                          Security code required
-                        </div>
-                      </div>
-                    </div>
-
-                    <hr className="my-4" />
-
-                    <button
-                      className="w-100 btn btn-primary "
-                      type="submit"
-                      disabled
-                    >
-                      Continue to checkout
-                    </button>
-                  </form> */}
                   <Form
                     name="validateOnly"
                     {...{
@@ -414,6 +212,7 @@ const Checkout = () => {
                         { required: true, min: 3 },
                         { whitespace: true },
                       ]}
+                      initialValue={"908"} // TODO
                     >
                       <Input.TextArea
                         autoSize={{ minRows: 3, maxRows: 3 }}
@@ -438,6 +237,7 @@ const Checkout = () => {
                         },
                         { whitespace: true },
                       ]}
+                      initialValue={"50000"} // TODO
                     >
                       <Input
                         placeholder="Enter Pincode"
@@ -491,6 +291,7 @@ const Checkout = () => {
                         { required: true, min: 3 },
                         { whitespace: true },
                       ]}
+                      initialValue={"904"} // TODO
                     >
                       <Input
                         disabled
@@ -512,6 +313,7 @@ const Checkout = () => {
                         { required: true, min: 3 },
                         { whitespace: true },
                       ]}
+                      initialValue={"90"} // TODO
                     >
                       <Input
                         disabled
@@ -545,9 +347,20 @@ const Checkout = () => {
                         billingAddressForm={billingAddressForm}
                       ></BillingAddress>
                     )}{" "}
-                    {/* <button className="btn btn-outline-dark btn-sbuttonm m-4">
-                      Submit
-                    </button> */}
+                    <Form.Item
+                      name="Payment Option"
+                      label="Payment Option"
+                      validateFirstrules={[{ required: true }]}
+                    >
+                      <Radio.Group
+                        name="radiogroup"
+                        defaultValue={"UPI"}
+                        options={[
+                          { value: "UPI", label: "UPI" },
+                          { value: "COD", label: "COD" },
+                        ]}
+                      />
+                    </Form.Item>
                     <SubmitButton
                       form={form}
                       submittable={submittable}
@@ -556,8 +369,11 @@ const Checkout = () => {
                       billingAddressForm={billingAddressForm}
                       billingAddress={billingAddress}
                     ></SubmitButton>
-                    ,
                   </Form>
+                  <PaymentSuccess
+                    setIsModalOpenSuccess={setIsModalOpenSuccess}
+                    isModalOpenSuccess={isModalOpenSuccess}
+                  ></PaymentSuccess>
                 </div>
               </div>
             </div>

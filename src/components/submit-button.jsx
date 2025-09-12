@@ -38,16 +38,8 @@ export default function SubmitButton({
         onClick={onFinish}
         disabled={!submittable}
       >
-        Submit1
-      </button>
-      {/* <Button
-        key="submit"
-        type="primary"
-        onClick={onFinish}
-        disabled={!submittable}
-      >
         Submit
-      </Button> */}
+      </button>
     </span>
   );
 }
