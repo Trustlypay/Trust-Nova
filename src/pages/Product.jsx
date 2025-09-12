@@ -85,15 +85,24 @@ const Product = () => {
                 {product.rating && product.rating.rate}{" "}
                 <i className="fa fa-star"></i>
               </p>
-              <h3 className="display-6  my-4">${product.price}</h3>
-              <p className="lead">{product.description}</p>
+              <h3 className="display-6  my-4">₹{product.price}</h3>
+              <p className="lead">{product?.description?.[0]}</p>
+              {product?.description?.[1].split("    ").map((item) => (
+                <div>
+                  <span className="heading-3">
+                    {item.split("“")[0].trim() + " - "}
+                  </span>
+                  <span>{item.split("“")[1]}</span>
+                </div>
+              ))}
+              <br />
               <button
-                className="btn btn-outline-dark"
+                className="btn btn-outline-light"
                 onClick={() => addProduct(product)}
               >
                 Add to Cart
               </button>
-              <Link to="/cart" className="btn btn-dark mx-3">
+              <Link to="/cart" className="btn btn-light mx-3">
                 Go to Cart
               </Link>
             </div>

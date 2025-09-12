@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="d-flex align-items-center">
           <div className="buttons text-center">
             <Popover
-              placement="bottom"
+              placement="bottomLeft"
               open={value ? true : false}
               content={
                 <div
@@ -54,6 +54,8 @@ const Navbar = () => {
                     flexDirection: "column",
                     gap: "6px",
                     padding: "18px",
+                    height: "600px",
+                    overflow: "auto",
                   }}
                 >
                   {DATA.filter((filteredItem) =>
@@ -63,13 +65,15 @@ const Navbar = () => {
                       filteredItem.title.includes(value)
                     ).map((item) => (
                       <div
-                        className="heading-3"
+                        style={{ display: "flex", gap: "16px" }}
+                        className="cursor-pointer"
                         onClick={() => {
                           navigate("/product/" + item.id);
                           setValue("");
                         }}
                       >
-                        {item.title}{" "}
+                        <img src={item.image} alt="index" width="64px" />
+                        <div className="heading-3">{item.title} </div>
                       </div>
                     ))
                   ) : (
