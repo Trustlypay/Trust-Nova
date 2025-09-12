@@ -1,6 +1,7 @@
 #root {
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: Lexend;
+  --white: #fff;
 }
 
 .custom-class {

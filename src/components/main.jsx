@@ -12,7 +12,10 @@ const Main = () => {
           backgroundPosition: "center",
         }}
       />
-      <div className="card-img-overlay d-flex align-items-center flex-column justify-content-end">
+      <div
+        className="card-img-overlay d-flex align-items-center flex-column justify-content-end"
+        style={{ paddingBottom: "100px" }}
+      >
         <h5 className="card-title fs-1 text fw-lighter">
           Browse our latest products
         </h5>

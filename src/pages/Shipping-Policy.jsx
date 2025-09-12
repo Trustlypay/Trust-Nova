@@ -55,82 +55,58 @@ const ShippingPolicy = () => {
         Shipping charges for your order will be calculated and displayed at
         checkout.
       </p>
-      <div class="_tableContainer_16hzy_1">
-        <div
-          class="_tableWrapper_16hzy_14 group flex w-fit flex-col-reverse"
-          tabindex="-1"
-        >
-          <table
-            data-start="707"
-            data-end="1307"
-            class="w-fit min-w-(--thread-content-width)"
-          >
-            <thead data-start="707" data-end="807">
-              <tr data-start="707" data-end="807">
-                <th data-start="707" data-end="755" data-col-size="md">
-                  <strong data-start="709" data-end="728">
-                    Shipment Method
-                  </strong>
+      <div>
+        <div>
+          <table class="w-fit min-w-[var(--thread-content-width)] rounded-lg border-separate">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="px-3 py-2 text-left text-sm font-semibold text-gray-700">
+                  Shipment Method
                 </th>
-                <th data-start="755" data-end="785" data-col-size="sm">
-                  <strong data-start="757" data-end="784">
-                    Estimated Delivery Time
-                  </strong>
+                <th class="px-3 py-2 text-left text-sm font-semibold text-gray-700">
+                  Estimated Delivery Time
                 </th>
-                <th data-start="785" data-end="807" data-col-size="sm">
-                  <strong data-start="787" data-end="804">
-                    Shipment Cost
-                  </strong>
+                <th class="px-3 py-2 text-left text-sm font-semibold text-gray-700">
+                  Shipment Cost
                 </th>
               </tr>
             </thead>
-            <tbody data-start="908" data-end="1307">
-              <tr data-start="908" data-end="1007">
-                <td data-start="908" data-end="955" data-col-size="md">
+            <tbody>
+              <tr class="hover:bg-gray-50">
+                <td class="px-3 py-2 text-sm text-gray-600">
                   Standard Shipping (For Orders Above ₹1,500)
                 </td>
-                <td data-col-size="sm" data-start="955" data-end="985">
+                <td class="px-3 py-2 text-sm text-gray-600">
                   5–7 business days
                 </td>
-                <td data-col-size="sm" data-start="985" data-end="1007">
-                  Free
-                </td>
+                <td class="px-3 py-2 text-sm text-gray-600">Free</td>
               </tr>
-              <tr data-start="1008" data-end="1107">
-                <td data-start="1008" data-end="1055" data-col-size="md">
+              <tr class="hover:bg-gray-50">
+                <td class="px-3 py-2 text-sm text-gray-600">
                   Standard Shipping (For Orders Below ₹1,499)
                 </td>
-                <td data-col-size="sm" data-start="1055" data-end="1085">
+                <td class="px-3 py-2 text-sm text-gray-600">
                   5–7 business days
                 </td>
-                <td data-col-size="sm" data-start="1085" data-end="1107">
-                  ₹100
-                </td>
+                <td class="px-3 py-2 text-sm text-gray-600">₹100</td>
               </tr>
-              <tr data-start="1108" data-end="1207">
-                <td data-start="1108" data-end="1155" data-col-size="md">
+              <tr class="hover:bg-gray-50">
+                <td class="px-3 py-2 text-sm text-gray-600">
                   Express Shipping
                 </td>
-                <td data-col-size="sm" data-start="1155" data-end="1185">
+                <td class="px-3 py-2 text-sm text-gray-600">
                   1–2 business days
                 </td>
-                <td data-col-size="sm" data-start="1185" data-end="1207">
-                  ₹200
-                </td>
+                <td class="px-3 py-2 text-sm text-gray-600">₹200</td>
               </tr>
-              <tr data-start="1208" data-end="1307">
-                <td data-start="1208" data-end="1255" data-col-size="md">
-                  COD Orders
-                </td>
-                <td data-col-size="sm" data-start="1255" data-end="1285">
-                  7 business days
-                </td>
-                <td data-col-size="sm" data-start="1285" data-end="1307">
-                  ₹200
-                </td>
+              <tr class="hover:bg-gray-50">
+                <td class="px-3 py-2 text-sm text-gray-600">COD Orders</td>
+                <td class="px-3 py-2 text-sm text-gray-600">7 business days</td>
+                <td class="px-3 py-2 text-sm text-gray-600">₹200</td>
               </tr>
             </tbody>
           </table>
+
           <div class="sticky end-(--thread-content-margin) h-0 self-end select-none">
             <div class="absolute end-0 flex items-end">
               <span class="" data-state="closed">

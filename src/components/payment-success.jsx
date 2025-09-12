@@ -1,16 +1,20 @@
 import { Modal } from "antd";
 import { ConfigProvider } from "antd";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { clearProcuts } from "../redux/action";
 
 export default function PaymentSuccess({
   isModalOpenSuccess,
   setIsModalOpenSuccess,
 }) {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleOk = () => {
     setIsModalOpenSuccess(false);
     navigate("/");
+    dispatch(clearProcuts());
   };
 
   return (

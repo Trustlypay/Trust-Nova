@@ -69,8 +69,8 @@ const Login = () => {
             <Input.Password placeholder="Enter Password" variant="underlined" />
           </Form.Item>
 
-          <p>
-            New Here?
+          <p style={{ color: "var(--white)" }}>
+            New Here?{" "}
             <NavLink
               to="/register"
               className="text-decoration-underline text-info"

@@ -112,8 +112,8 @@ const Register = () => {
           >
             <Input.Password placeholder="Enter Password" variant="underlined" />
           </Form.Item>
-          <p>
-            Already has an account?
+          <p style={{ color: "var(--white)" }}>
+            Already has an account?{" "}
             <NavLink
               to="/login"
               className="text-decoration-underline text-info"

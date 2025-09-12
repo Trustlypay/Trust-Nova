@@ -354,7 +354,6 @@ const Checkout = () => {
                     >
                       <Radio.Group
                         name="radiogroup"
-                        defaultValue={"UPI"}
                         options={[
                           { value: "UPI", label: "UPI" },
                           { value: "COD", label: "COD" },
