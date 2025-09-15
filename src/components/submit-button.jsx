@@ -9,7 +9,8 @@ export default function SubmitButton({
   billingAddressForm,
   billingAddress,
 }) {
-  const values = Form.useWatch([], form);
+  const formValues = Form.useWatch([], form);
+  const billingAddressFormValues = Form.useWatch([], billingAddressForm);
 
   useEffect(() => {
     form
@@ -27,7 +28,7 @@ export default function SubmitButton({
         }
       })
       .catch(() => setSubmittable(false));
-  }, [form, values]);
+  }, [form, formValues, billingAddressForm, billingAddressFormValues]);
 
   return (
     <span>
