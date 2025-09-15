@@ -15,9 +15,9 @@ const Checkout = () => {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-md-12 py-5 bg-light text-center">
+          <div className="col-md-12 py-5 bg-dark text-center">
             <h4 className="p-3 display-5">No item in Cart</h4>
-            <Link to="/" className="btn btn-outline-dark mx-4">
+            <Link to="/" className="btn btn-outline-light mx-4">
               <i className="fa fa-arrow-left"></i> Continue Shopping
             </Link>
           </div>
@@ -41,10 +41,7 @@ const Checkout = () => {
           void billingAddressForm.validateFields().then(() => {
             if (form.getFieldValue("Payment Option") === "UPI") {
               userService
-                .paymentLink(
-                  Math.round(subtotal + shipping),
-                  `${Math.round(subtotal + shipping)}`
-                )
+                .paymentLink(Math.round(subtotal), `${Math.round(subtotal)}`)
                 .then((data) => (window.location.href = data.short_url));
             } else if (form.getFieldValue("Payment Option") === "COD") {
               setIsModalOpenSuccess(true);
@@ -53,10 +50,7 @@ const Checkout = () => {
         } else {
           if (form.getFieldValue("Payment Option") === "UPI") {
             userService
-              .paymentLink(
-                Math.round(subtotal + shipping),
-                `${Math.round(subtotal + shipping)}`
-              )
+              .paymentLink(Math.round(subtotal), `${Math.round(subtotal)}`)
               .then((data) => (window.location.href = data.short_url));
           } else if (form.getFieldValue("Payment Option") === "COD") {
             setIsModalOpenSuccess(true);
@@ -66,15 +60,20 @@ const Checkout = () => {
     };
 
     let subtotal = 0;
-    let shipping = 30.0;
+    let gst = 0;
     let totalItems = 0;
     state.map((item) => {
       return (subtotal += item.price * item.qty);
     });
 
     state.map((item) => {
+      return (gst += item.gst * item.qty);
+    });
+
+    state.map((item) => {
       return (totalItems += item.qty);
     });
+
     return (
       <>
         <div className="container py-5">
@@ -88,18 +87,22 @@ const Checkout = () => {
                   <ul className="list-group list-group-flush">
                     <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                       Products ({totalItems})
-                      <span>₹{Math.round(subtotal)}</span>
+                      <span>
+                        ₹{Math.round(subtotal - gst)?.toLocaleString("en-IN")}
+                      </span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center px-0">
                       Shipping
-                      <span>₹{shipping}</span>
+                      <span>₹{gst?.toLocaleString("en-IN")}</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                       <div>
                         <strong>Total amount</strong>
                       </div>
                       <span>
-                        <strong>₹{Math.round(subtotal + shipping)}</strong>
+                        <strong>
+                          ₹{Math.round(subtotal)?.toLocaleString("en-IN")}
+                        </strong>
                       </span>
                     </li>
                   </ul>

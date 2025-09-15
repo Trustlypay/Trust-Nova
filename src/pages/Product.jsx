@@ -85,7 +85,9 @@ const Product = () => {
                 {product.rating && product.rating.rate}{" "}
                 <i className="fa fa-star"></i>
               </p>
-              <h3 className="display-6  my-4">₹{product.price}</h3>
+              <h3 className="display-6  my-4">
+                ₹{product.price?.toLocaleString("en-IN")}
+              </h3>
               <p className="lead">{product?.description?.[0]}</p>
               {product?.description?.[1].split("    ").map((item) => (
                 <div>

@@ -236,10 +236,19 @@ const Products = () => {
                     }}
                   />
                 </Link>
-                <div style={{ padding: "10px" }}>
-                  {product.title.substring(0, 60)}...
+                <Link
+                  to={"/product/" + product.id}
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "instant" });
+                  }}
+                >
+                  <div style={{ padding: "10px" }}>
+                    {product.title.substring(0, 60)}...
+                  </div>
+                </Link>
+                <div className="heading-3">
+                  ₹ {product.price?.toLocaleString("en-IN")}
                 </div>
-                <div className="heading-3">₹ {product.price}</div>
                 <button
                   className="btn btn-dark m-1"
                   onClick={() => addProduct(product)}

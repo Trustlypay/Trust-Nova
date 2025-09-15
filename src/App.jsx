@@ -19,7 +19,6 @@ import dayjs from "dayjs";
 import RefundPolicy from "./pages/Refund-Policy";
 import TermsOfService from "./pages/Terms-Of-Service";
 import ShippingPolicy from "./pages/Shipping-Policy";
-import PrivacyPolicy from "./pages/Privacy-Policy";
 import DataRetentionPolicy from "./pages/Data-Retention-Policy";
 import CancellationPolicy from "./pages/Cancellation-Policy";
 import { userService } from "./service/user.service";
@@ -75,7 +74,6 @@ export default function App() {
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/shipping-policy" element={<ShippingPolicy />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route
             path="/data-retention-policy"
             element={<DataRetentionPolicy />}
@@ -215,15 +213,6 @@ export default function App() {
               }}
             >
               <small>© 2025,Trust Nova </small>
-              <small
-                onClick={() => {
-                  navigate("/privacy-policy");
-                  window.scrollTo({ top: 0, behavior: "instant" });
-                }}
-                className="hover-underline cursor-pointer"
-              >
-                Privacy Policy
-              </small>
             </div>
           </footer>
         )}
