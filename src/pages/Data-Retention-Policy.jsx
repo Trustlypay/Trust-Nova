@@ -18,9 +18,9 @@ const DataRetentionPolicy = () => {
           data-end="298"
           rel="noopener"
           class=""
-          href="https://trustnova.shop/" //TODO -
+          href={window.location.origin}
         >
-          https://trustnova.shop/
+          {window.location.origin}
         </a>{" "}
         (referred to as "the Company," "we," "our," or "us") for retaining
         personal and transactional data collected from users. As an e-commerce

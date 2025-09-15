@@ -19,9 +19,9 @@ const CancellationPolicy = () => {
           data-end="415"
           class=""
           rel="noopener"
-          href="https://trustnova.shop/"
+          href={window.location.origin}
         >
-          https://trustnova.shop/
+          {window.location.origin}
         </a>{" "}
         (referred to as "the Company," "we," "our," or "us"). This policy is
         designed to provide a fair and transparent process for order
