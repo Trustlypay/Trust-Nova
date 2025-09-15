@@ -205,7 +205,7 @@ const Products = () => {
             <div
               id={product.id}
               key={product.id}
-              className="col-md-3 col-sm-6 col-xs-12 col-12 mb-4"
+              className="col-lg-3 col-md-4 col-sm-6 col-xs-12 col-12 mb-4"
               style={{ textAlign: "center" }}
             >
               <div
@@ -230,8 +230,10 @@ const Products = () => {
                   <img
                     src={product.image}
                     alt="Card"
-                    height={200}
-                    width={200}
+                    style={{
+                      height: "200px",
+                      width: "200px",
+                    }}
                   />
                 </Link>
                 <div style={{ padding: "10px" }}>
