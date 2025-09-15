@@ -17,7 +17,6 @@ const DataRetentionPolicy = () => {
           data-start="248"
           data-end="298"
           rel="noopener"
-          class=""
           href={window.location.origin}
         >
           {window.location.origin}
@@ -290,7 +289,7 @@ const DataRetentionPolicy = () => {
             <a
               data-start="5237"
               data-end="5256"
-              class="cursor-pointer"
+              className="cursor-pointer"
               rel="noopener"
             >
               info@trustnova.shop

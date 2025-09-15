@@ -195,7 +195,7 @@ const TermsOfService = () => {
             <a
               data-start="2848"
               data-end="2867"
-              class="cursor-pointer"
+              className="cursor-pointer"
               rel="noopener"
             >
               info@trustnova.shop

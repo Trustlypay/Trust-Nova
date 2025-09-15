@@ -17,7 +17,6 @@ const CancellationPolicy = () => {
         <a
           data-start="365"
           data-end="415"
-          class=""
           rel="noopener"
           href={window.location.origin}
         >
@@ -64,7 +63,7 @@ const CancellationPolicy = () => {
               <a
                 data-start="1213"
                 data-end="1232"
-                class="cursor-pointer"
+                className="cursor-pointer"
                 rel="noopener"
               >
                 info@trustnova.shop
@@ -365,7 +364,7 @@ const CancellationPolicy = () => {
             <a
               data-start="5974"
               data-end="5993"
-              class="cursor-pointer"
+              className="cursor-pointer"
               rel="noopener"
             >
               info@trustnova.shop
@@ -408,7 +407,7 @@ const CancellationPolicy = () => {
             <a
               data-start="6488"
               data-end="6507"
-              class="cursor-pointer"
+              className="cursor-pointer"
               rel="noopener"
             >
               info@trustnova.shop

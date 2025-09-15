@@ -76,7 +76,7 @@ const RefundPolicy = () => {
             <a
               data-start="855"
               data-end="874"
-              class="cursor-pointer"
+              className="cursor-pointer"
               rel="noopener"
             >
               info@trustnova.shop

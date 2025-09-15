@@ -69,6 +69,7 @@ const Navbar = () => {
                         .includes(value.toLowerCase())
                     ).map((item) => (
                       <div
+                        key={item.id}
                         style={{ display: "flex", gap: "16px" }}
                         className="cursor-pointer"
                         onClick={() => {
@@ -138,7 +139,7 @@ const Navbar = () => {
               }
             >
               <div className="btn btn-outline-light m-1">
-                <i class="fa-regular fa-user"></i>
+                <i className="fa-regular fa-user"></i>
               </div>
             </Popover>
           </div>
