@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addCart } from "../redux/action";
 
@@ -8,7 +8,12 @@ import { Link } from "react-router-dom";
 import { DATA } from "../products";
 
 const Products = () => {
-  const [filter, setFilter] = useState(DATA);
+  const [filter, setFilter] = useState(
+    location.pathname === "/product"
+      ? DATA
+      : DATA.sort(() => 0.5 - Math.random()).slice(0, 8)
+  );
+  const [selectedValue, setSelectedValue] = useState();
   const dispatch = useDispatch();
 
   const addProduct = (product) => {
@@ -19,164 +24,226 @@ const Products = () => {
     const updatedList = DATA.filter((item) => item.category === cat);
     setFilter(updatedList);
   };
+
   const ShowProducts = () => {
     return (
       <>
-        <div className="buttons text-center py-5">
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => setFilter(DATA)}
-          >
-            All
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Cameras")}
-          >
-            Cameras
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Handheld Players & Recorders")}
-          >
-            Handheld Players & Recorders
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Power Adapters & Chargers")}
-          >
-            Power Adapters & Chargers
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("3D Printers & Components")}
-          >
-            3D Printers & Components
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Cables, Wires & Cable Ties")}
-          >
-            Cables, Wires & Cable Ties
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Electronics Components")}
-          >
-            Electronics Components
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("USB Flash Drives & Hard Drives")}
-          >
-            USB Flash Drives & Hard Drives
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Electronics Cleaners")}
-          >
-            Electronics Cleaners
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Computer Accessories")}
-          >
-            Computer Accessories
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() =>
-              filterProduct("Speakers, Microphones, Audio Components")
-            }
-          >
-            Speakers, Microphones, Audio Components
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Desktop Computers")}
-          >
-            Desktop Computers
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Gaming Chairs")}
-          >
-            Gaming Chairs
-          </button>
+        {location.pathname === "/product" && (
+          <>
+            <div style={{ textAlign: "end" }}>
+              Sort by{" "}
+              <select
+                value={selectedValue}
+                style={{ width: "200px" }}
+                onChange={(e) => {
+                  setSelectedValue(e.target.value);
+                  if (e.target.value === "a-z") {
+                    const filters = [...filter];
+                    filters.sort((a, b) =>
+                      a.title.toLowerCase().localeCompare(b.title.toLowerCase())
+                    );
+                    setFilter(filters);
+                  }
+                  if (e.target.value === "z-a") {
+                    const filters = [...filter];
+                    filters.sort((a, b) =>
+                      b.title.toLowerCase().localeCompare(a.title.toLowerCase())
+                    );
+                    setFilter(filters);
+                  }
+                  if (e.target.value === "0-5") {
+                    const filters = [...filter];
+                    filters.sort((a, b) => a.rating.rate - b.rating.rate);
+                    setFilter(filters);
+                  }
+                  if (e.target.value === "5-0") {
+                    const filters = [...filter];
+                    filters.sort((a, b) => b.rating.rate - a.rating.rate);
+                    setFilter(filters);
+                  }
+                  if (e.target.value === "low - high") {
+                    const filters = [...filter];
+                    filters.sort((a, b) => a.price - b.price);
+                    setFilter(filters);
+                  }
+                  if (e.target.value === "high - low") {
+                    const filters = [...filter];
+                    filters.sort((a, b) => b.price - a.price);
+                    setFilter(filters);
+                  }
+                }}
+              >
+                <option value="a-z">Alphabetically, A-Z</option>
+                <option value="z-a">Alphabetically, Z-A</option>
+                <option value="0-5">rating, 0-5</option>
+                <option value="5-0">rating, 5-0</option>{" "}
+                <option value="low - high">price, low - high</option>
+                <option value="high - low">price, high - low</option>
+              </select>
+            </div>
+            <div className="buttons text-center py-5">
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => setFilter(DATA)}
+              >
+                All
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Cameras")}
+              >
+                Cameras
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Handheld Players & Recorders")}
+              >
+                Handheld Players & Recorders
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Power Adapters & Chargers")}
+              >
+                Power Adapters & Chargers
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("3D Printers & Components")}
+              >
+                3D Printers & Components
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Cables, Wires & Cable Ties")}
+              >
+                Cables, Wires & Cable Ties
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Electronics Components")}
+              >
+                Electronics Components
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("USB Flash Drives & Hard Drives")}
+              >
+                USB Flash Drives & Hard Drives
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Electronics Cleaners")}
+              >
+                Electronics Cleaners
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Computer Accessories")}
+              >
+                Computer Accessories
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() =>
+                  filterProduct("Speakers, Microphones, Audio Components")
+                }
+              >
+                Speakers, Microphones, Audio Components
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Desktop Computers")}
+              >
+                Desktop Computers
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Gaming Chairs")}
+              >
+                Gaming Chairs
+              </button>
 
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Desks")}
-          >
-            Desks
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Mobile Phone Stands")}
-          >
-            Mobile Phone Stands
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Powered Hand Fans & Misters")}
-          >
-            Powered Hand Fans & Misters
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() => filterProduct("Multimedia Projectors")}
-          >
-            Multimedia Projectors
-          </button>
-          <button
-            className="btn btn-outline-light btn-sm m-2"
-            onClick={() =>
-              filterProduct(
-                "Lighting Control Kits, Night Lights & Ambient Lighting"
-              )
-            }
-          >
-            Lighting Control Kits, Night Lights & Ambient Lighting
-          </button>
-        </div>
-
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Desks")}
+              >
+                Desks
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Mobile Phone Stands")}
+              >
+                Mobile Phone Stands
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Powered Hand Fans & Misters")}
+              >
+                Powered Hand Fans & Misters
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Multimedia Projectors")}
+              >
+                Multimedia Projectors
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() =>
+                  filterProduct(
+                    "Lighting Control Kits, Night Lights & Ambient Lighting"
+                  )
+                }
+              >
+                Lighting Control Kits, Night Lights & Ambient Lighting
+              </button>
+            </div>
+          </>
+        )}
         {filter.map((product) => {
           return (
             <div
               id={product.id}
               key={product.id}
-              className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4"
+              className="col-md-3 col-sm-6 col-xs-12 col-12 mb-4"
+              style={{ textAlign: "center" }}
             >
-              <div className="card text-center h-100" key={product.id}>
-                <Link to={"/product/" + product.id}>
+              <div
+                key={product.id}
+                style={{
+                  height: "100%",
+                  backgroundColor: "#EEF0F2",
+                  color: "#222222",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyItems: "flex-end",
+                  gap: "10px",
+                  alignItems: "center",
+                }}
+              >
+                <Link
+                  to={"/product/" + product.id}
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "instant" });
+                  }}
+                >
                   <img
-                    className="card-img-top p-3"
                     src={product.image}
                     alt="Card"
-                    height={300}
+                    height={200}
+                    width={200}
                   />
                 </Link>
-                <div className="card-body">
-                  <h5 className="card-title">
-                    {product.title.substring(0, 12)}...
-                  </h5>
-                  <p className="card-text">
-                    {product.description?.[0]?.substring(0, 90)}...
-                  </p>
+                <div style={{ padding: "10px" }}>
+                  {product.title.substring(0, 60)}...
                 </div>
-                <ul className="list-group list-group-flush">
-                  <li className="list-group-item lead">₹ {product.price}</li>
-                  {/* <li className="list-group-item">Dapibus ac facilisis in</li>
-                    <li className="list-group-item">Vestibulum at eros</li> */}
-                </ul>
-                <div className="card-body">
-                  <button
-                    className="btn btn-dark m-1"
-                    onClick={() => addProduct(product)}
-                  >
-                    Add to Cart
-                  </button>
-                </div>
+                <div className="heading-3">₹ {product.price}</div>
+                <button
+                  className="btn btn-dark m-1"
+                  onClick={() => addProduct(product)}
+                >
+                  Add to Cart
+                </button>
               </div>
             </div>
           );

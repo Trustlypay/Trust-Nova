@@ -59,10 +59,14 @@ const Navbar = () => {
                   }}
                 >
                   {DATA.filter((filteredItem) =>
-                    filteredItem.title.includes(value)
+                    filteredItem.title
+                      .toLowerCase()
+                      .includes(value.toLowerCase())
                   ).length > 0 ? (
                     DATA.filter((filteredItem) =>
-                      filteredItem.title.includes(value)
+                      filteredItem.title
+                        .toLowerCase()
+                        .includes(value.toLowerCase())
                     ).map((item) => (
                       <div
                         style={{ display: "flex", gap: "16px" }}
@@ -83,6 +87,7 @@ const Navbar = () => {
               }
             >
               <input
+                className="input"
                 value={value}
                 type="text"
                 name="search"

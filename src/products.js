@@ -6,7 +6,7 @@ export const DATA = [
     price: 3000.0,
     description: [
       "1080p Full HD Trail Camera  “ Waterproof with Night Vision   Fast Trigger Durable outdoor camera designed for wildlife monitoring, security, and outdoor surveillance.",
-      "1080p Full HD Video Quality “ Clear, high-resolution footage    Waterproof Design “ Reliable performance in all weather conditions    Long Battery Life “ Extended operation for remote monitoring    Wide-Angle Lens “ Captures broad scenes with ease    Fast 0.8s Trigger Speed “ Quickly detects and records motion    Night Vision Capability “ Clear images in low light or darkness    Ideal For: Wildlife, farms, construction sites, home security, and outdoor CCTV",
+      "1080p Full HD Video Quality “ Clear, high-resolution footage    Waterproof Design “ Reliable performance in all weather conditions    Long Battery Life “ Extended operation for remote monitoring    Wide-Angle Lens “ Captures broad scenes with ease    Fast 0.8s Trigger Speed “ Quickly detects and records motion    Night Vision Capability “ Clear images in low light or darkness    Ideal For “ Wildlife, farms, construction sites, home security, and outdoor CCTV",
     ],
     category: "Cameras",
     image:
@@ -22,7 +22,7 @@ export const DATA = [
     price: 800.0,
     description: [
       "16GB Mini MP3 Music Player with Bluetooth 5.4  “ Voice Recorder, FM Radio, Video Playback (Black) Compact and feature-packed MP3 player with built-in storage, wireless connectivity, and multi-functional media support.",
-      "16GB Internal Storage “ Store thousands of songs, expandable up to 128GB via microSD (card not included)    Bluetooth 5.4 “ Fast, stable wireless connection for headphones and speakers    Multimedia Support “ Play music, videos, and view images on-the-go    Voice Recording   FM Radio “ Built-in mic for memos and access to local radio    Pocket-Sized   Lightweight “ Ideal for travel, workouts, and everyday use    Color: Black",
+      "16GB Internal Storage “ Store thousands of songs, expandable up to 128GB via microSD (card not included)    Bluetooth 5.4 “ Fast, stable wireless connection for headphones and speakers    Multimedia Support “ Play music, videos, and view images on-the-go    Voice Recording   FM Radio “ Built-in mic for memos and access to local radio    Pocket-Sized   Lightweight “ Ideal for travel, workouts, and everyday use    Color “ Black",
     ],
     category: "Handheld Players & Recorders",
     image:
@@ -54,7 +54,6 @@ export const DATA = [
     price: 650.0,
     description: [
       "1kg PLA PRO+ 3D Printing Filament  “ High Strength   Flexibility (Candy Red) Premium quality PLA PRO+ filament designed for stronger, smoother, and more reliable 3D prints.",
-      "Perfect for hobbyists, makers, and professionals.",
       "Enhanced Formula “ Improved strength, flexibility, and layer adhesion    Eco-Friendly Material “ Biodegradable and safe for everyday use    Vibrant Candy Red Color “ Ideal for decorative and functional prints    High Dimensional Accuracy “ Consistent 1.75mm diameter for smooth extrusion    Wide Compatibility “ Works with most FDM 3D printers    Made in India “ Quality-controlled manufacturing for reliable performance Perfect for models, prototypes, parts, and creative projects.",
     ],
     category: "3D Printers & Components",
@@ -118,7 +117,7 @@ export const DATA = [
     price: 1800.0,
     description: [
       "2-Port HDMI Switcher with Cable  “ Control Two PCs with One Keyboard   Monitor Easily switch between two computers using a single keyboard, mouse, and HDMI monitor with this convenient 2-in-1 KVM switcher.",
-      "2 HDMI Inputs, 1 Output “ Connect and switch between two PCs or laptops    Includes USB   HDMI Cables “ Ready to use right out of the box    Compact   Easy to Use “ Switch devices via button press, no complex setup    Supports Full HD   4K “ Crisp video quality for gaming, work, and media    Plug and Play “ No drivers needed, compatible with Windows, Mac, Linux    Perfect for : Multi-device setups, home offices, and gaming stations",
+      "2 HDMI Inputs, 1 Output “ Connect and switch between two PCs or laptops    Includes USB   HDMI Cables “ Ready to use right out of the box    Compact   Easy to Use “ Switch devices via button press, no complex setup    Supports Full HD   4K “ Crisp video quality for gaming, work, and media    Plug and Play “ No drivers needed, compatible with Windows, Mac, Linux    Perfect for “ Multi-device setups, home offices, and gaming stations",
     ],
     category: "Electronics Components",
     image:
@@ -134,7 +133,7 @@ export const DATA = [
     price: 100.0,
     description: [
       "3.5mm Audio Jack Splitter  “ 1 Male to 2 Female U-Shaped Adapter with Mic Support (Black) Share audio or connect separate headphones and mic with this compact U-shaped 3.5mm splitter adapter designed for convenience and compatibility.",
-      "1 Male to 2 Female Splitter “ Connects both headphone and microphone jacks to a single 3.5mm port    U-Shaped Design “ Space-saving and ideal for tight or side-mounted ports    Supports Audio   Mic “ Works with headsets that have separate jacks    Compact   Lightweight “ Easy to carry in your bag, pocket, or case    Compatible With : Laptops, PCs, gaming controllers, and select smartphones    Color: Black",
+      "1 Male to 2 Female Splitter “ Connects both headphone and microphone jacks to a single 3.5mm port    U-Shaped Design “ Space-saving and ideal for tight or side-mounted ports    Supports Audio   Mic “ Works with headsets that have separate jacks    Compact   Lightweight “ Easy to carry in your bag, pocket, or case    Compatible With “ Laptops, PCs, gaming controllers, and select smartphones    Color “ Black",
     ],
     category: "Cables, Wires & Cable Ties",
     image:
@@ -198,7 +197,7 @@ export const DATA = [
     price: 8000.0,
     description: [
       "512GB M.2 NVMe SSD (2280)  “ PCIe Gen 4, Up to 7000 MB/s Read, 4300 MB/s Write High-speed internal solid-state drive designed for laptops and desktops requiring ultra-fast storage and performance.",
-      "PCIe Gen 4.0 NVMe Interface “ Blazing fast data transfer for demanding applications    Read Speed: Up to 7000 MB/s    Write Speed: Up to 4300 MB/s    Form Factor: M.2 2280  “ Compatible with most laptops and motherboards    Capacity: 512GB  “ Ideal for OS, games, and large files    Reliable Performance “ Designed for long-term use with enhanced thermal control    Warranty: 5 Years",
+      "PCIe Gen 4.0 NVMe Interface “ Blazing fast data transfer for demanding applications    Read Speed: Up to 7000 MB/s    Write Speed: Up to 4300 MB/s    Form Factor: M.2 2280  “ Compatible with most laptops and motherboards    Capacity: 512GB  “ Ideal for OS, games, and large files    Reliable Performance “ Designed for long-term use with enhanced thermal control    Warranty “ 5 Years",
     ],
     category: "USB Flash Drives & Hard Drives",
     image:
@@ -214,7 +213,7 @@ export const DATA = [
     price: 100.0,
     description: [
       "5-in-1 Multi-Function Cleaning Kit  “ For Laptops, Keyboards, and Gadgets Keep your devices spotless with this compact and versatile cleaning kit , designed for deep cleaning of laptops, keyboards, earphones, and more.",
-      "5-in-1 Design “ Includes soft brush, gap duster, keycap puller, precision tools, and cleaning sponge    Perfect for Laptops   Keyboards “ Removes dust, crumbs, and debris from tight spaces    Keycap Puller Tool “ Easily remove keys for thorough cleaning    Earphone Cleaning Tip “ Clean mesh and charging ports without damage    Compact   Portable “ Easy to carry in your tech bag or desk drawer    Ideal For : Laptops, mechanical keyboards, earbuds, phones, and other small gadgets",
+      "5-in-1 Design “ Includes soft brush, gap duster, keycap puller, precision tools, and cleaning sponge    Perfect for Laptops   Keyboards “ Removes dust, crumbs, and debris from tight spaces    Keycap Puller Tool “ Easily remove keys for thorough cleaning    Earphone Cleaning Tip “ Clean mesh and charging ports without damage    Compact   Portable “ Easy to carry in your tech bag or desk drawer    Ideal For “ Laptops, mechanical keyboards, earbuds, phones, and other small gadgets",
     ],
     category: "Electronics Cleaners",
     image:
@@ -229,7 +228,7 @@ export const DATA = [
     price: 450.0,
     description: [
       "5-Meter VGA Male-to-Male Cable (3+4 Pins) Connect your VGA-enabled devices easily with this durable 5-meter VGA cable featuring male connectors on both ends.",
-      "Length: 5 meters for flexible setups    Connector Type: Male-to-Male VGA (3+4 pins)    High-Quality Signal Transmission “ Supports video resolutions up to [specify if known, e.g., 1080p]    Compatible With: Monitors, projectors, desktops, laptops, and other VGA devices    Durable Build: Robust connectors and cable for long-lasting use",
+      "Length: 5 meters for flexible setups    Connector Type: Male-to-Male VGA (3+4 pins)    High-Quality Signal Transmission “ Supports video resolutions up to [specify if known, e.g., 1080p]    Compatible With “ Monitors, projectors, desktops, laptops, and other VGA devices    Durable Build “ Robust connectors and cable for long-lasting use",
     ],
     category: "Cables, Wires & Cable Ties",
     image:
@@ -244,7 +243,7 @@ export const DATA = [
     price: 1300.0,
     description: [
       "5-Pack 64GB USB Flash Drives  “ High-Speed Data Storage Reliable and portable USB flash drives with 64GB capacity, ideal for storing and transferring documents, photos, videos, and more.",
-      "64GB Storage Capacity “ Plenty of space for all your important files    High-Speed USB 2.0/3.0 “ Fast data transfer and file access (specify USB version if known)    Compact   Durable “ Lightweight design fits easily in pockets or bags    Plug and Play “ No driver installation required, works with Windows, Mac, Linux    Set of 5 “ Perfect for sharing, backups, or organizing different data sets    Compatible With : PCs, laptops, TVs, car stereos, gaming consoles, and more Ideal for students, professionals, and everyday use.",
+      "64GB Storage Capacity “ Plenty of space for all your important files    High-Speed USB 2.0/3.0 “ Fast data transfer and file access (specify USB version if known)    Compact   Durable “ Lightweight design fits easily in pockets or bags    Plug and Play “ No driver installation required, works with Windows, Mac, Linux    Set of 5 “ Perfect for sharing, backups, or organizing different data sets    Compatible With “ PCs, laptops, TVs, car stereos, gaming consoles, and more Ideal for students, professionals, and everyday use.",
     ],
     category: "USB Flash Drives & Hard Drives",
     image:

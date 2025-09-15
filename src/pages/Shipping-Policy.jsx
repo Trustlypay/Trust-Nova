@@ -14,9 +14,9 @@ const ShippingPolicy = () => {
           data-end="305"
           class=""
           rel="noopener"
-          href="https://trustnova.shop"
+          href={window.location.origin}
         >
-          https://trustnova.shop //TODO - chnage to actual url
+          {window.location.origin}{" "}
         </a>
         . If you have any questions, please contact our customer service team at{" "}
         <strong data-start="378" data-end="398">

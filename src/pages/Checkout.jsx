@@ -212,7 +212,6 @@ const Checkout = () => {
                         { required: true, min: 3 },
                         { whitespace: true },
                       ]}
-                      initialValue={"908"} // TODO
                     >
                       <Input.TextArea
                         autoSize={{ minRows: 3, maxRows: 3 }}
@@ -237,7 +236,6 @@ const Checkout = () => {
                         },
                         { whitespace: true },
                       ]}
-                      initialValue={"50000"} // TODO
                     >
                       <Input
                         placeholder="Enter Pincode"
@@ -291,7 +289,6 @@ const Checkout = () => {
                         { required: true, min: 3 },
                         { whitespace: true },
                       ]}
-                      initialValue={"904"} // TODO
                     >
                       <Input
                         disabled
@@ -313,7 +310,6 @@ const Checkout = () => {
                         { required: true, min: 3 },
                         { whitespace: true },
                       ]}
-                      initialValue={"90"} // TODO
                     >
                       <Input
                         disabled
