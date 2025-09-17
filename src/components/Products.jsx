@@ -90,112 +90,63 @@ const Products = () => {
               </button>
               <button
                 className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Cameras")}
+                onClick={() => filterProduct("Video - Cameras, Adapters")}
               >
-                Cameras
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Handheld Players & Recorders")}
-              >
-                Handheld Players & Recorders
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Power Adapters & Chargers")}
-              >
-                Power Adapters & Chargers
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("3D Printers & Components")}
-              >
-                3D Printers & Components
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Cables, Wires & Cable Ties")}
-              >
-                Cables, Wires & Cable Ties
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Electronics Components")}
-              >
-                Electronics Components
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("USB Flash Drives & Hard Drives")}
-              >
-                USB Flash Drives & Hard Drives
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Electronics Cleaners")}
-              >
-                Electronics Cleaners
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Computer Accessories")}
-              >
-                Computer Accessories
+                Video - Cameras, Adapters
               </button>
               <button
                 className="btn btn-outline-light btn-sm m-2"
                 onClick={() =>
-                  filterProduct("Speakers, Microphones, Audio Components")
+                  filterProduct("Power Adapters, Extentions & Chargers")
                 }
               >
-                Speakers, Microphones, Audio Components
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Desktop Computers")}
-              >
-                Desktop Computers
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Gaming Chairs")}
-              >
-                Gaming Chairs
+                Power Adapters, Extentions & Chargers
               </button>
 
               <button
                 className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Desks")}
+                onClick={() => filterProduct("USB, Wires, Cables, Adapters")}
               >
-                Desks
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Mobile Phone Stands")}
-              >
-                Mobile Phone Stands
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Powered Hand Fans & Misters")}
-              >
-                Powered Hand Fans & Misters
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => filterProduct("Multimedia Projectors")}
-              >
-                Multimedia Projectors
+                USB, Wires, Cables, Adapters
               </button>
               <button
                 className="btn btn-outline-light btn-sm m-2"
                 onClick={() =>
                   filterProduct(
-                    "Lighting Control Kits, Night Lights & Ambient Lighting"
+                    "Audio - Speakers, Headphones, Microphones & Accessories"
                   )
                 }
               >
-                Lighting Control Kits, Night Lights & Ambient Lighting
+                Audio - Speakers, Headphones, Microphones & Accessories
+              </button>
+
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() =>
+                  filterProduct(
+                    "Computer & Computer Accessories, Components, Peripherals"
+                  )
+                }
+              >
+                Computer & Computer Accessories, Components, Peripherals
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Gaming")}
+              >
+                Gaming
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Electronic Components")}
+              >
+                Electronic Components
+              </button>
+              <button
+                className="btn btn-outline-light btn-sm m-2"
+                onClick={() => filterProduct("Electronics")}
+              >
+                Electronics
               </button>
             </div>
           </>
