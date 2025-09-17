@@ -2977,7 +2977,7 @@ export const DATA = [
       "25-Piece Spiral Cable Protectors  Wire & Cord Saver for USB, Headphones, Chargers (Black & Grey)",
     price: 100,
     description: [
-      "ðŸ›¡ï¸ 25-Piece Spiral Cable Protectors “ Wire  Cord Saver for USB, Headphones, Chargers (Black  Grey) Protect your cables and extend their lifespan with this set of durable spiral cable protectors designed for all wired accessories.",
+      "25-Piece Spiral Cable Protectors “ Wire  Cord Saver for USB, Headphones, Chargers (Black  Grey) Protect your cables and extend their lifespan with this set of durable spiral cable protectors designed for all wired accessories.",
       "… 25 Pieces Included “ Plenty to cover multiple cables or replacements… Universal Compatibility “ Fits USB chargers, data cables, headphones, laptop cords, and more… Durable  Flexible “ Made from elastic material to prevent cable bending and breakage… Easy to Install “ Simply wrap around cables for instant protection… Black  Grey Colors “ Neutral tones that blend with most cables… Prevents Fraying  Tangles “ Keeps cables neat and safe during daily use",
     ],
     category: "USB, Wires, Cables, Adapters",

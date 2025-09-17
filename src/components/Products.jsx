@@ -194,7 +194,7 @@ const Products = () => {
                   }}
                 >
                   <div style={{ padding: "10px" }}>
-                    {product.title.substring(0, 60)}...
+                    {product.title.substring(0, 50)}...
                   </div>
                 </Link>
                 <div className="heading-3">

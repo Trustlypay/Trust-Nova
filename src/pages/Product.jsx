@@ -88,15 +88,7 @@ const Product = () => {
               <h3 className="display-6  my-4">
                 ₹{product.price?.toLocaleString("en-IN")}
               </h3>
-              <p className="lead">{product?.description?.[0]}</p>
-              {product?.description?.[1].split("    ").map((item) => (
-                <div>
-                  <span className="heading-3">
-                    {item.split("“")[0].trim() + " - "}
-                  </span>
-                  <span>{item.split("“")[1]}</span>
-                </div>
-              ))}
+              <p className="lead">{product?.description}</p>
               <br />
               <button
                 className="btn btn-outline-light"
