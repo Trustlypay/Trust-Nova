@@ -138,8 +138,8 @@ const Cart = () => {
                         </span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center px-0">
-                        Shipping
-                        <span>₹{gst?.toLocaleString("en-IN")}</span>
+                        GST
+                        <span>₹{Math.round(gst?.toLocaleString("en-IN"))}</span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                         <div>

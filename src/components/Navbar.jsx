@@ -64,10 +64,14 @@ const Navbar = () => {
                     overflow: "auto",
                   }}
                 >
-                  {DATA.filter((filteredItem) =>
-                    filteredItem.title
-                      .toLowerCase()
-                      .includes(value.toLowerCase())
+                  {DATA.filter(
+                    (filteredItem) =>
+                      filteredItem.title
+                        .toLowerCase()
+                        .includes(value.toLowerCase()) ||
+                      filteredItem.tags.map((tagItem) =>
+                        tagItem.toLowerCase().includes(value.toLowerCase())
+                      )
                   ).length > 0 ? (
                     DATA.filter((filteredItem) =>
                       filteredItem.title

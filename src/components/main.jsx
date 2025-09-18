@@ -1,7 +1,9 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="card bg-dark text-white">
       <div
@@ -19,9 +21,15 @@ const Main = () => {
         <h5 className="card-title fs-1 text fw-lighter">
           Browse our latest products
         </h5>
-        <NavLink to="/product" className="btn btn-outline-light m-1">
+        <div
+          className="btn btn-outline-light m-1"
+          onClick={() => {
+            navigate("/product");
+            window.scrollTo({ top: 0, behavior: "instant" });
+          }}
+        >
           All Products
-        </NavLink>
+        </div>
       </div>
     </div>
   );

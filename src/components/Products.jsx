@@ -4,23 +4,27 @@ import { addCart } from "../redux/action";
 
 import "react-loading-skeleton/dist/skeleton.css";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { DATA } from "../products";
 
 const Products = () => {
   const [filter, setFilter] = useState(
     location.pathname === "/product"
       ? DATA
-      : DATA.sort(() => 0.5 - Math.random()).slice(0, 8)
+      : DATA.sort(() => 0.5 - Math.random())
+          .filter((filterItem) => filterItem.price <= 1000)
+          .slice(0, 8)
   );
   const [selectedValue, setSelectedValue] = useState();
+  const [filterSelected, setFilterSelected] = useState("All");
   const dispatch = useDispatch();
-
+  const navigate = useNavigate();
   const addProduct = (product) => {
     dispatch(addCart(product));
   };
 
   const filterProduct = (cat) => {
+    setFilterSelected(cat);
     const updatedList = DATA.filter((item) => item.category === cat);
     setFilter(updatedList);
   };
@@ -83,19 +87,34 @@ const Products = () => {
             </div>
             <div className="buttons text-center py-5">
               <button
-                className="btn btn-outline-light btn-sm m-2"
-                onClick={() => setFilter(DATA)}
+                className={
+                  filterSelected === "All"
+                    ? "btn btn-primary btn-sm"
+                    : "btn btn-outline-light btn-sm m-2"
+                }
+                onClick={() => {
+                  setFilter(DATA);
+                  setFilterSelected("All");
+                }}
               >
                 All
               </button>
               <button
-                className="btn btn-outline-light btn-sm m-2"
+                className={
+                  filterSelected === "Video - Cameras, Adapters"
+                    ? "btn btn-primary btn-sm"
+                    : "btn btn-outline-light btn-sm m-2"
+                }
                 onClick={() => filterProduct("Video - Cameras, Adapters")}
               >
                 Video - Cameras, Adapters
               </button>
               <button
-                className="btn btn-outline-light btn-sm m-2"
+                className={
+                  filterSelected === "Power Adapters, Extentions & Chargers"
+                    ? "btn btn-primary btn-sm"
+                    : "btn btn-outline-light btn-sm m-2"
+                }
                 onClick={() =>
                   filterProduct("Power Adapters, Extentions & Chargers")
                 }
@@ -104,13 +123,22 @@ const Products = () => {
               </button>
 
               <button
-                className="btn btn-outline-light btn-sm m-2"
+                className={
+                  filterSelected === "USB, Wires, Cables, Adapters"
+                    ? "btn btn-primary btn-sm"
+                    : "btn btn-outline-light btn-sm m-2"
+                }
                 onClick={() => filterProduct("USB, Wires, Cables, Adapters")}
               >
                 USB, Wires, Cables, Adapters
               </button>
               <button
-                className="btn btn-outline-light btn-sm m-2"
+                className={
+                  filterSelected ===
+                  "Audio - Speakers, Headphones, Microphones & Accessories"
+                    ? "btn btn-primary btn-sm"
+                    : "btn btn-outline-light btn-sm m-2"
+                }
                 onClick={() =>
                   filterProduct(
                     "Audio - Speakers, Headphones, Microphones & Accessories"
@@ -121,7 +149,12 @@ const Products = () => {
               </button>
 
               <button
-                className="btn btn-outline-light btn-sm m-2"
+                className={
+                  filterSelected ===
+                  "Computer & Computer Accessories, Components, Peripherals"
+                    ? "btn btn-primary btn-sm"
+                    : "btn btn-outline-light btn-sm m-2"
+                }
                 onClick={() =>
                   filterProduct(
                     "Computer & Computer Accessories, Components, Peripherals"
@@ -131,19 +164,31 @@ const Products = () => {
                 Computer & Computer Accessories, Components, Peripherals
               </button>
               <button
-                className="btn btn-outline-light btn-sm m-2"
+                className={
+                  filterSelected === "Gaming"
+                    ? "btn btn-primary btn-sm"
+                    : "btn btn-outline-light btn-sm m-2"
+                }
                 onClick={() => filterProduct("Gaming")}
               >
                 Gaming
               </button>
               <button
-                className="btn btn-outline-light btn-sm m-2"
+                className={
+                  filterSelected === "Electronic Components"
+                    ? "btn btn-primary btn-sm"
+                    : "btn btn-outline-light btn-sm m-2"
+                }
                 onClick={() => filterProduct("Electronic Components")}
               >
                 Electronic Components
               </button>
               <button
-                className="btn btn-outline-light btn-sm m-2"
+                className={
+                  filterSelected === "Electronics"
+                    ? "btn btn-primary btn-sm"
+                    : "btn btn-outline-light btn-sm m-2"
+                }
                 onClick={() => filterProduct("Electronics")}
               >
                 Electronics
@@ -163,13 +208,15 @@ const Products = () => {
                 key={product.id}
                 style={{
                   height: "100%",
-                  backgroundColor: "#EEF0F2",
-                  color: "#222222",
+                  backgroundColor: "#fff",
+                  color: "#2D5D7B",
                   display: "flex",
                   flexDirection: "column",
                   justifyItems: "flex-end",
-                  gap: "10px",
+                  gap: "12px",
                   alignItems: "center",
+                  padding: "16px",
+                  borderRadius: "12px",
                 }}
               >
                 <Link
@@ -187,25 +234,49 @@ const Products = () => {
                     }}
                   />
                 </Link>
-                <Link
-                  to={"/product/" + product.id}
+                <div
                   onClick={() => {
+                    navigate("/product/" + product.id);
                     window.scrollTo({ top: 0, behavior: "instant" });
                   }}
                 >
-                  <div style={{ padding: "10px" }}>
-                    {product.title.substring(0, 50)}...
-                  </div>
-                </Link>
-                <div className="heading-3">
-                  ₹ {product.price?.toLocaleString("en-IN")}
+                  {product.title.substring(0, 25)}
                 </div>
-                <button
-                  className="btn btn-dark m-1"
-                  onClick={() => addProduct(product)}
+
+                <div>
+                  <div className="heading-2">
+                    ₹ {product.price?.toLocaleString("en-IN")}
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    width: "100%",
+                    justifyContent: "space-between",
+                    alignItems: "center,",
+                  }}
                 >
-                  Add to Cart
-                </button>
+                  <div
+                    className="lead "
+                    style={{
+                      color: "#FAA916",
+                      alignSelf: "center",
+                    }}
+                  >
+                    {product.rating && product.rating.rate}{" "}
+                    <i className="fa fa-star"></i>
+                  </div>{" "}
+                  <button
+                    className="btn m-1"
+                    style={{
+                      fontSize: "24px",
+                      border: "1.5px",
+                    }}
+                    onClick={() => addProduct(product)}
+                  >
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                </div>
               </div>
             </div>
           );
@@ -219,7 +290,6 @@ const Products = () => {
         <div className="row">
           <div className="col-12">
             <h2 className="display-5 text-center">Latest Products</h2>
-            <hr />
           </div>
         </div>
         <div className="row justify-content-center">

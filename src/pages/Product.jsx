@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import { useDispatch } from "react-redux";
 import { addCart } from "../redux/action";
@@ -67,39 +67,79 @@ const Product = () => {
   const ShowProduct = () => {
     return (
       <>
-        <div className="container my-5 py-2">
-          <div className="row">
-            <div className="col-md-6 col-sm-12 py-3">
-              <img
-                className="img-fluid"
-                src={product.image}
-                alt={product.title}
-                width="400px"
-                height="400px"
-              />
-            </div>
-            <div className="col-md-6 col-md-6 py-5">
-              <h4 className="text-uppercase text-muted">{product.category}</h4>
-              <h1 className="display-5">{product.title}</h1>
-              <p className="lead">
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            padding: "0px 5%",
+            backgroundColor: "#fff",
+            color: "#000",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              width: "100%",
+            }}
+          >
+            <img
+              src={product.image}
+              alt={product.title}
+              width="500px"
+              height="500px"
+            />
+          </div>
+          <div className="col-md-6 col-md-6 py-5">
+            <h6 className="text-uppercase text-muted">{product.category}</h6>
+            <h1 className="display-5">{product.title}</h1>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "flex-end",
+              }}
+            >
+              <h3 className="display-4  my-4">
+                ₹{product.price?.toLocaleString("en-IN")}
+              </h3>{" "}
+              <p
+                className="lead"
+                style={{
+                  color: "#FAA916",
+                  fontSize: "24px",
+                  paddingRight: "60px",
+                }}
+              >
                 {product.rating && product.rating.rate}{" "}
                 <i className="fa fa-star"></i>
               </p>
-              <h3 className="display-6  my-4">
-                ₹{product.price?.toLocaleString("en-IN")}
-              </h3>
-              <p className="lead">{product?.description}</p>
-              <br />
-              <button
-                className="btn btn-outline-light"
-                onClick={() => addProduct(product)}
-              >
-                Add to Cart
-              </button>
-              <Link to="/cart" className="btn btn-light mx-3">
-                Go to Cart
-              </Link>
             </div>
+
+            <div className="lead">
+              {product?.description?.[0].split("?").map((item1) => (
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "10px",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  <span>👉 </span> <span> {item1}</span>
+                </div>
+              ))}
+            </div>
+            <br />
+            <button
+              className="btn btn-outline-dark"
+              onClick={() => addProduct(product)}
+            >
+              Add to Cart
+            </button>
+            <Link to="/cart" className="btn btn-dark mx-3">
+              Go to Cart
+            </Link>
           </div>
         </div>
       </>
@@ -130,41 +170,97 @@ const Product = () => {
   };
 
   const ShowSimilarProduct = () => {
+    const navigate = useNavigate();
+
     return (
       <>
         <div className="py-4 my-4">
-          <div className="d-flex">
+          <div
+            style={{
+              display: "flex",
+              gap: "24px",
+            }}
+          >
             {similarProducts.map((item) => {
               return (
-                <div key={item.id} className="card mx-4 text-center">
-                  <img
-                    className="card-img-top p-3"
-                    src={item.image}
-                    alt="Card"
-                    height={300}
-                    width={300}
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">
-                      {item.title.substring(0, 15)}...
-                    </h5>
-                  </div>
-                  {/* <ul className="list-group list-group-flush">
-                    <li className="list-group-item lead">${product.price}</li>
-                  </ul> */}
-                  <div className="card-body">
+                <div
+                  id={item.id}
+                  key={item.id}
+                  style={{ textAlign: "center", height: "100%" }}
+                >
+                  <div
+                    key={item.id}
+                    style={{
+                      height: "100%",
+                      backgroundColor: "#fff",
+                      color: "#2D5D7B",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyItems: "flex-end",
+                      gap: "12px",
+                      alignItems: "center",
+                      padding: "16px",
+                      borderRadius: "12px",
+                    }}
+                  >
                     <Link
                       to={"/product/" + item.id}
-                      className="btn btn-dark m-1"
+                      onClick={() => {
+                        window.scrollTo({ top: 0, behavior: "instant" });
+                      }}
                     >
-                      Buy Now
+                      <img
+                        src={item.image}
+                        alt="Card"
+                        style={{
+                          height: "200px",
+                          width: "200px",
+                        }}
+                      />
                     </Link>
-                    <button
-                      className="btn btn-dark m-1"
-                      onClick={() => addProduct(item)}
+                    <div
+                      onClick={() => {
+                        navigate("/product/" + item.id);
+                        window.scrollTo({ top: 0, behavior: "instant" });
+                      }}
                     >
-                      Add to Cart
-                    </button>
+                      {item.title.substring(0, 25)}
+                    </div>
+
+                    <div>
+                      <div className="heading-2">
+                        ₹ {item.price?.toLocaleString("en-IN")}
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        width: "100%",
+                        justifyContent: "space-between",
+                        alignItems: "center,",
+                      }}
+                    >
+                      <div
+                        className="lead "
+                        style={{
+                          color: "#FAA916",
+                          alignSelf: "center",
+                        }}
+                      >
+                        {item.rating && item.rating.rate}{" "}
+                        <i className="fa fa-star"></i>
+                      </div>{" "}
+                      <button
+                        className="btn m-1"
+                        style={{
+                          fontSize: "24px",
+                          border: "1.5px",
+                        }}
+                        onClick={() => addProduct(item)}
+                      >
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               );
@@ -175,19 +271,17 @@ const Product = () => {
     );
   };
   return (
-    <>
-      <div className="container">
-        <div className="row">{loading ? <Loading /> : <ShowProduct />}</div>
-        <div className="row my-5 py-5">
-          <div className="d-none d-md-block">
-            <h2>You may also Like</h2>
-            <Marquee pauseOnHover={true} pauseOnClick={true} speed={50}>
-              {loading2 ? <Loading2 /> : <ShowSimilarProduct />}
-            </Marquee>
-          </div>
+    <div style={{ overflowX: "hidden" }}>
+      <div>{loading ? <Loading /> : <ShowProduct />}</div>
+      <div className="row my-5 py-5">
+        <div className="d-none d-md-block">
+          <h2 style={{ textAlign: "center" }}>You may also Like</h2>
+          <Marquee pauseOnHover={true} pauseOnClick={true} speed={50}>
+            {loading2 ? <Loading2 /> : <ShowSimilarProduct />}
+          </Marquee>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
