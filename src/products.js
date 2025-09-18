@@ -11,7 +11,7 @@ export const DATA = [
     tags: ["black micro-sd-card", "aux wired usb", "rechargeable"],
     image: "/cropped/trustnova_product_1.jpg",
     rating: { rate: 4.4 },
-    gst: 106.77966101694915,
+    gst: 126,
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const DATA = [
     tags: ["silver", "black usb usb rechargeable", "usb"],
     image: "/cropped/trustnova_product_2.jpg",
     rating: { rate: 4.8 },
-    gst: 103.72881355932203,
+    gst: 122.39999999999999,
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const DATA = [
     tags: ["black usb ac-powered"],
     image: "/cropped/trustnova_product_3.jpg",
     rating: { rate: 3.5 },
-    gst: 106.77966101694915,
+    gst: 126,
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ export const DATA = [
     tags: ["black usb usb usb-2-0"],
     image: "/cropped/trustnova_product_4.jpg",
     rating: { rate: 4.4 },
-    gst: 106.77966101694915,
+    gst: 126,
   },
   {
     id: 5,
@@ -66,7 +66,7 @@ export const DATA = [
     tags: ["orange usb usb usb-2-0"],
     image: "/cropped/trustnova_product_5.jpg",
     rating: { rate: 4.1 },
-    gst: 137.28813559322035,
+    gst: 162,
   },
   {
     id: 6,
@@ -80,7 +80,7 @@ export const DATA = [
     tags: ["black dc-powered"],
     image: "/cropped/trustnova_product_6.jpg",
     rating: { rate: 4.2 },
-    gst: 91.52542372881356,
+    gst: 108,
   },
   {
     id: 7,
@@ -93,7 +93,7 @@ export const DATA = [
     tags: ["black usb usb usb-2-0"],
     image: "/cropped/trustnova_product_7.jpg",
     rating: { rate: 4.3 },
-    gst: 106.77966101694915,
+    gst: 126,
   },
   {
     id: 8,
@@ -106,7 +106,7 @@ export const DATA = [
     tags: ["unshielded-utp black power-cord"],
     image: "/cropped/trustnova_product_8.jpg",
     rating: { rate: 3.7 },
-    gst: 137.28813559322035,
+    gst: 162,
   },
   {
     id: 9,
@@ -120,7 +120,7 @@ export const DATA = [
     tags: ["white usb us ac-powered"],
     image: "/cropped/trustnova_product_9.jpg",
     rating: { rate: 3.3 },
-    gst: 106.77966101694915,
+    gst: 126,
   },
   {
     id: 10,
@@ -134,7 +134,7 @@ export const DATA = [
     tags: ["black usb us ac-powered"],
     image: "/cropped/trustnova_product_10.jpg",
     rating: { rate: 4.1 },
-    gst: 76.27118644067797,
+    gst: 90,
   },
   {
     id: 11,
@@ -148,7 +148,7 @@ export const DATA = [
     tags: ["black power-cord us ac-powered"],
     image: "/cropped/trustnova_product_11.jpg",
     rating: { rate: 4.2 },
-    gst: 76.27118644067797,
+    gst: 90,
   },
   {
     id: 12,
@@ -162,7 +162,7 @@ export const DATA = [
     tags: ["braided-stp blue usb", "micro-usb"],
     image: "/cropped/trustnova_product_12.jpg",
     rating: { rate: 4.1 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 13,
@@ -176,7 +176,7 @@ export const DATA = [
     tags: ["braided-stp black usb"],
     image: "/cropped/trustnova_product_13.jpg",
     rating: { rate: 4.5 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 14,
@@ -189,7 +189,7 @@ export const DATA = [
     tags: ["braided-stp checkered usb"],
     image: "/cropped/trustnova_product_14.jpg",
     rating: { rate: 4.1 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 15,
@@ -208,7 +208,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_15.jpg",
     rating: { rate: 4 },
-    gst: 90,
+    gst: 106.2,
   },
   {
     id: 16,
@@ -225,7 +225,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_16.jpg",
     rating: { rate: 3.9 },
-    gst: 91.52542372881356,
+    gst: 108,
   },
   {
     id: 17,
@@ -244,7 +244,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_17.jpg",
     rating: { rate: 3.9 },
-    gst: 38.13559322033898,
+    gst: 45,
   },
   {
     id: 18,
@@ -264,7 +264,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_18.jpg",
     rating: { rate: 4 },
-    gst: 122.03389830508475,
+    gst: 144,
   },
   {
     id: 19,
@@ -283,7 +283,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_19.jpg",
     rating: { rate: 4 },
-    gst: 76.27118644067797,
+    gst: 90,
   },
   {
     id: 20,
@@ -303,7 +303,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_20.jpg",
     rating: { rate: 3.7 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 21,
@@ -316,7 +316,7 @@ export const DATA = [
     tags: ["white wired usb omnidirectional usb"],
     image: "/cropped/trustnova_product_21.jpg",
     rating: { rate: 3.8 },
-    gst: 61.016949152542374,
+    gst: 72,
   },
   {
     id: 22,
@@ -337,7 +337,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_22.jpg",
     rating: { rate: 3.8 },
-    gst: 53.389830508474574,
+    gst: 63,
   },
   {
     id: 23,
@@ -355,7 +355,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_23.jpg",
     rating: { rate: 4.4 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 24,
@@ -369,7 +369,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_24.jpg",
     rating: { rate: 3.7 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 25,
@@ -382,7 +382,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_25.jpg",
     rating: { rate: 4.4 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 26,
@@ -401,7 +401,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_26.jpg",
     rating: { rate: 3.7 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 27,
@@ -419,7 +419,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_27.jpg",
     rating: { rate: 3.3 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 28,
@@ -436,7 +436,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_28.jpg",
     rating: { rate: 4 },
-    gst: 76.27118644067797,
+    gst: 90,
   },
   {
     id: 29,
@@ -454,7 +454,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_29.jpg",
     rating: { rate: 4.2 },
-    gst: 22.88135593220339,
+    gst: 27,
   },
   {
     id: 30,
@@ -473,7 +473,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_30.jpg",
     rating: { rate: 4.2 },
-    gst: 61.016949152542374,
+    gst: 72,
   },
   {
     id: 31,
@@ -491,7 +491,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_31.jpg",
     rating: { rate: 3.9 },
-    gst: 61.016949152542374,
+    gst: 72,
   },
   {
     id: 32,
@@ -510,7 +510,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_32.jpg",
     rating: { rate: 4.1 },
-    gst: 61.016949152542374,
+    gst: 72,
   },
   {
     id: 33,
@@ -530,7 +530,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_33.jpg",
     rating: { rate: 4.3 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 34,
@@ -550,7 +550,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_34.jpg",
     rating: { rate: 4 },
-    gst: 61.016949152542374,
+    gst: 72,
   },
   {
     id: 35,
@@ -569,7 +569,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_35.jpg",
     rating: { rate: 3.9 },
-    gst: 61.016949152542374,
+    gst: 72,
   },
   {
     id: 36,
@@ -588,7 +588,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_36.jpg",
     rating: { rate: 3.8 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 37,
@@ -606,7 +606,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_37.jpg",
     rating: { rate: 3.5 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 38,
@@ -624,7 +624,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_38.jpg",
     rating: { rate: 3.9 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 39,
@@ -641,7 +641,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_39.jpg",
     rating: { rate: 3.8 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 40,
@@ -659,7 +659,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_40.jpg",
     rating: { rate: 4.3 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 41,
@@ -677,7 +677,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_41.jpg",
     rating: { rate: 4 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 42,
@@ -694,7 +694,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_42.jpg",
     rating: { rate: 3.7 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 43,
@@ -713,7 +713,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_43.jpg",
     rating: { rate: 3.8 },
-    gst: 22.88135593220339,
+    gst: 27,
   },
   {
     id: 44,
@@ -732,7 +732,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_44.jpg",
     rating: { rate: 3.7 },
-    gst: 38.13559322033898,
+    gst: 45,
   },
   {
     id: 45,
@@ -745,7 +745,7 @@ export const DATA = [
     tags: ["black wireless", "bluetooth earbuds", "canal"],
     image: "/cropped/trustnova_product_45.jpg",
     rating: { rate: 4.3 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 46,
@@ -765,7 +765,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_46.jpg",
     rating: { rate: 4.7 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 47,
@@ -785,7 +785,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_47.jpg",
     rating: { rate: 4.1 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 48,
@@ -805,7 +805,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_48.webp",
     rating: { rate: 3.9 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 49,
@@ -823,7 +823,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_49.jpg",
     rating: { rate: 3.9 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 50,
@@ -836,7 +836,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_50.jpg",
     rating: { rate: 3.9 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 51,
@@ -853,7 +853,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_51.jpg",
     rating: { rate: 4 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 52,
@@ -867,7 +867,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_52.jpg",
     rating: { rate: 3.5 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 53,
@@ -886,7 +886,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_53.jpg",
     rating: { rate: 4.4 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 54,
@@ -900,7 +900,7 @@ export const DATA = [
     tags: ["white"],
     image: "/cropped/trustnova_product_54.jpg",
     rating: { rate: 4.1 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 55,
@@ -914,7 +914,7 @@ export const DATA = [
     tags: ["white"],
     image: "/cropped/trustnova_product_55.jpg",
     rating: { rate: 3.4 },
-    gst: 38.13559322033898,
+    gst: 45,
   },
   {
     id: 56,
@@ -927,7 +927,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_56.jpg",
     rating: { rate: 4.4 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 57,
@@ -941,7 +941,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_57.jpg",
     rating: { rate: 4.1 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 58,
@@ -955,7 +955,7 @@ export const DATA = [
     tags: ["multicolor"],
     image: "/cropped/trustnova_product_58.jpg",
     rating: { rate: 4.4 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 59,
@@ -968,7 +968,7 @@ export const DATA = [
     tags: ["black usb"],
     image: "/cropped/trustnova_product_59.jpg",
     rating: { rate: 4 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 60,
@@ -981,7 +981,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_60.jpg",
     rating: { rate: 4.1 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 61,
@@ -994,7 +994,7 @@ export const DATA = [
     tags: ["white cool-white"],
     image: "/cropped/trustnova_product_61.jpg",
     rating: { rate: 3.9 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 62,
@@ -1013,7 +1013,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_62.jpg",
     rating: { rate: 4 },
-    gst: 25.93220338983051,
+    gst: 30.599999999999998,
   },
   {
     id: 63,
@@ -1036,7 +1036,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_63.jpg",
     rating: { rate: 4.1 },
-    gst: 53.389830508474574,
+    gst: 63,
   },
   {
     id: 64,
@@ -1049,7 +1049,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_64.jpg",
     rating: { rate: 4 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 65,
@@ -1062,7 +1062,7 @@ export const DATA = [
     tags: ["black wired wall", "tabletop ac-powered dynamic"],
     image: "/cropped/trustnova_product_65.jpg",
     rating: { rate: 4.7 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 66,
@@ -1075,7 +1075,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_66.jpg",
     rating: { rate: 3.7 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 67,
@@ -1088,7 +1088,7 @@ export const DATA = [
     tags: ["black rca", "coaxial", "3-5-mm", "toslink"],
     image: "/cropped/trustnova_product_67.jpg",
     rating: { rate: 4.3 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 68,
@@ -1101,7 +1101,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_68.jpg",
     rating: { rate: 3.1 },
-    gst: 38.13559322033898,
+    gst: 45,
   },
   {
     id: 69,
@@ -1119,7 +1119,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_69.webp",
     rating: { rate: 3.7 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 70,
@@ -1136,7 +1136,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_70.jpg",
     rating: { rate: 4.3 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 71,
@@ -1150,7 +1150,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_71.jpg",
     rating: { rate: 4.3 },
-    gst: 22.88135593220339,
+    gst: 27,
   },
   {
     id: 72,
@@ -1164,7 +1164,7 @@ export const DATA = [
     tags: ["white wired 3-5-mm free-standing", "tabletop usb portable dynamic"],
     image: "/cropped/trustnova_product_72.jpg",
     rating: { rate: 3.6 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 73,
@@ -1178,7 +1178,7 @@ export const DATA = [
     tags: ["black usb", "wired usb tabletop usb bookshelf dynamic"],
     image: "/cropped/trustnova_product_73.jpg",
     rating: { rate: 4.2 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 74,
@@ -1192,7 +1192,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_74.jpg",
     rating: { rate: 4.5 },
-    gst: 38.13559322033898,
+    gst: 45,
   },
   {
     id: 75,
@@ -1211,7 +1211,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_75.jpg",
     rating: { rate: 3.4 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 76,
@@ -1225,7 +1225,7 @@ export const DATA = [
     tags: ["multicolor keyboard", "mouse"],
     image: "/cropped/trustnova_product_76.jpg",
     rating: { rate: 3.9 },
-    gst: 38.13559322033898,
+    gst: 45,
   },
   {
     id: 77,
@@ -1238,7 +1238,7 @@ export const DATA = [
     tags: ["advanced-configuration black smd nand-flash rigid"],
     image: "/cropped/trustnova_product_77.jpg",
     rating: { rate: 3.7 },
-    gst: 22.88135593220339,
+    gst: 27,
   },
   {
     id: 78,
@@ -1252,7 +1252,7 @@ export const DATA = [
     tags: ["green wired dc-powered indoors"],
     image: "/cropped/trustnova_product_78.jpg",
     rating: { rate: 4.7 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 79,
@@ -1266,7 +1266,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_79.jpg",
     rating: { rate: 3.9 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 80,
@@ -1280,7 +1280,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_80.jpg",
     rating: { rate: 4.3 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 81,
@@ -1294,7 +1294,7 @@ export const DATA = [
     tags: ["black wired", "bluetooth", "usb fm"],
     image: "/cropped/trustnova_product_81.jpg",
     rating: { rate: 4.3 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 82,
@@ -1307,7 +1307,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_82.jpg",
     rating: { rate: 3.8 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 83,
@@ -1320,7 +1320,7 @@ export const DATA = [
     tags: ["multicolor rigid"],
     image: "/cropped/trustnova_product_83.jpg",
     rating: { rate: 4 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 84,
@@ -1334,7 +1334,7 @@ export const DATA = [
     tags: ["black usb"],
     image: "/cropped/trustnova_product_84.jpg",
     rating: { rate: 4.4 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 85,
@@ -1348,7 +1348,7 @@ export const DATA = [
     tags: ["green dip flash rigid"],
     image: "/cropped/trustnova_product_85.jpg",
     rating: { rate: 3.1 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 86,
@@ -1362,7 +1362,7 @@ export const DATA = [
     tags: ["green rigid", "double-layer"],
     image: "/cropped/trustnova_product_86.jpg",
     rating: { rate: 4.1 },
-    gst: 38.13559322033898,
+    gst: 45,
   },
   {
     id: 87,
@@ -1376,7 +1376,7 @@ export const DATA = [
     tags: ["silver to-220"],
     image: "/cropped/trustnova_product_87.jpg",
     rating: { rate: 3.7 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 88,
@@ -1389,7 +1389,7 @@ export const DATA = [
     tags: ["green"],
     image: "/cropped/trustnova_product_88.webp",
     rating: { rate: 4.2 },
-    gst: 16.779661016949152,
+    gst: 19.8,
   },
   {
     id: 89,
@@ -1403,7 +1403,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_89.jpg",
     rating: { rate: 3.3 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 90,
@@ -1416,7 +1416,7 @@ export const DATA = [
     tags: ["black tablet", "smartphone wired battery-powered", "rechargeable"],
     image: "/cropped/trustnova_product_90.jpg",
     rating: { rate: 4 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 91,
@@ -1429,7 +1429,7 @@ export const DATA = [
     tags: ["blue"],
     image: "/cropped/trustnova_product_91.jpg",
     rating: { rate: 4.1 },
-    gst: 22.88135593220339,
+    gst: 27,
   },
   {
     id: 92,
@@ -1446,7 +1446,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_92.jpg",
     rating: { rate: 3.6 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 93,
@@ -1459,7 +1459,7 @@ export const DATA = [
     tags: ["advanced-configuration blue smd nand-flash rigid"],
     image: "/cropped/trustnova_product_93.jpg",
     rating: { rate: 4.2 },
-    gst: 25.93220338983051,
+    gst: 30.599999999999998,
   },
   {
     id: 94,
@@ -1472,7 +1472,7 @@ export const DATA = [
     tags: ["blue nand-flash rigid"],
     image: "/cropped/trustnova_product_94.jpg",
     rating: { rate: 4.3 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 95,
@@ -1485,7 +1485,7 @@ export const DATA = [
     tags: ["advanced-configuration black"],
     image: "/cropped/trustnova_product_95.jpg",
     rating: { rate: 4.2 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 96,
@@ -1498,7 +1498,7 @@ export const DATA = [
     tags: ["advanced-configuration purple nor-flash", "sram rigid"],
     image: "/cropped/trustnova_product_96.jpg",
     rating: { rate: 4 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 97,
@@ -1511,7 +1511,7 @@ export const DATA = [
     tags: ["advanced-configuration black smd", "dip flash rigid"],
     image: "/cropped/trustnova_product_97.jpg",
     rating: { rate: 2.7 },
-    gst: 68.64406779661017,
+    gst: 81,
   },
   {
     id: 98,
@@ -1524,7 +1524,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_98.jpg",
     rating: { rate: 4.1 },
-    gst: 22.88135593220339,
+    gst: 27,
   },
   {
     id: 99,
@@ -1537,7 +1537,7 @@ export const DATA = [
     tags: ["blue"],
     image: "/cropped/trustnova_product_99.jpg",
     rating: { rate: 4.9 },
-    gst: 76.27118644067797,
+    gst: 90,
   },
   {
     id: 100,
@@ -1550,7 +1550,7 @@ export const DATA = [
     tags: ["multicolor"],
     image: "/cropped/trustnova_product_100.jpg",
     rating: { rate: 3.6 },
-    gst: 61.016949152542374,
+    gst: 72,
   },
   {
     id: 101,
@@ -1564,7 +1564,7 @@ export const DATA = [
     tags: ["multicolor"],
     image: "/cropped/trustnova_product_101.webp",
     rating: { rate: 3.9 },
-    gst: 18.30508474576271,
+    gst: 21.599999999999998,
   },
   {
     id: 102,
@@ -1577,7 +1577,7 @@ export const DATA = [
     tags: ["advanced-configuration black smd flash rigid"],
     image: "/cropped/trustnova_product_102.jpg",
     rating: { rate: 3.7 },
-    gst: 38.13559322033898,
+    gst: 45,
   },
   {
     id: 103,
@@ -1598,7 +1598,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_103.jpg",
     rating: { rate: 4.1 },
-    gst: 61.016949152542374,
+    gst: 72,
   },
   {
     id: 104,
@@ -1617,7 +1617,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_104.jpg",
     rating: { rate: 4.2 },
-    gst: 53.389830508474574,
+    gst: 63,
   },
   {
     id: 105,
@@ -1630,7 +1630,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_105.jpg",
     rating: { rate: 4.6 },
-    gst: 38.13559322033898,
+    gst: 45,
   },
   {
     id: 106,
@@ -1643,7 +1643,7 @@ export const DATA = [
     tags: ["black wired 3-5-mm condenser omnidirectional manual"],
     image: "/cropped/trustnova_product_106.jpg",
     rating: { rate: 4 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 107,
@@ -1656,7 +1656,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_107.jpg",
     rating: { rate: 4.2 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 108,
@@ -1669,7 +1669,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_108.jpg",
     rating: { rate: 3.7 },
-    gst: 18.30508474576271,
+    gst: 21.599999999999998,
   },
   {
     id: 109,
@@ -1682,7 +1682,7 @@ export const DATA = [
     tags: ["advanced-configuration blue smd rigid"],
     image: "/cropped/trustnova_product_109.jpg",
     rating: { rate: 3.7 },
-    gst: 526.271186440678,
+    gst: 621,
   },
   {
     id: 110,
@@ -1701,7 +1701,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_110.jpg",
     rating: { rate: 4.4 },
-    gst: 1159.322033898305,
+    gst: 1368,
   },
   {
     id: 111,
@@ -1715,7 +1715,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_111.jpg",
     rating: { rate: 3.7 },
-    gst: 350.8474576271187,
+    gst: 414,
   },
   {
     id: 112,
@@ -1728,7 +1728,7 @@ export const DATA = [
     tags: ["multicolor indoors"],
     image: "/cropped/trustnova_product_112.jpg",
     rating: { rate: 3.9 },
-    gst: 198.30508474576274,
+    gst: 234,
   },
   {
     id: 113,
@@ -1741,7 +1741,7 @@ export const DATA = [
     tags: ["advanced-configuration green dip", "smd rigid"],
     image: "/cropped/trustnova_product_113.jpg",
     rating: { rate: 4.2 },
-    gst: 85.42372881355932,
+    gst: 100.8,
   },
   {
     id: 114,
@@ -1758,7 +1758,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_114.jpg",
     rating: { rate: 4.3 },
-    gst: 3783.050847457627,
+    gst: 4464,
   },
   {
     id: 115,
@@ -1772,7 +1772,7 @@ export const DATA = [
     tags: ["multicolor"],
     image: "/cropped/trustnova_product_115.jpg",
     rating: { rate: 3.7 },
-    gst: 1311.864406779661,
+    gst: 1548,
   },
   {
     id: 116,
@@ -1786,7 +1786,7 @@ export const DATA = [
     tags: ["white wired wired", "usb ac-powered"],
     image: "/cropped/trustnova_product_116.jpg",
     rating: { rate: 4.6 },
-    gst: 8153.389830508475,
+    gst: 9621,
   },
   {
     id: 117,
@@ -1800,7 +1800,7 @@ export const DATA = [
     tags: ["gray wired", "usb wired", "usb usb"],
     image: "/cropped/trustnova_product_117.jpg",
     rating: { rate: 3.4 },
-    gst: 1022.0338983050848,
+    gst: 1206,
   },
   {
     id: 118,
@@ -1814,7 +1814,7 @@ export const DATA = [
     tags: ["striped wireless wireless rechargeable", "usb"],
     image: "/cropped/trustnova_product_118.jpg",
     rating: { rate: 4.3 },
-    gst: 375.25423728813564,
+    gst: 442.8,
   },
   {
     id: 119,
@@ -1828,7 +1828,7 @@ export const DATA = [
     tags: ["multicolor wireless wireless usb", "rechargeable"],
     image: "/cropped/trustnova_product_119.jpg",
     rating: { rate: 3.9 },
-    gst: 244.0677966101695,
+    gst: 288,
   },
   {
     id: 120,
@@ -1842,7 +1842,7 @@ export const DATA = [
     tags: ["white usb", "wireless usb", "wireless rechargeable", "usb"],
     image: "/cropped/trustnova_product_120.jpg",
     rating: { rate: 4.1 },
-    gst: 183.05084745762713,
+    gst: 216,
   },
   {
     id: 121,
@@ -1860,7 +1860,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_121.jpg",
     rating: { rate: 4.4 },
-    gst: 99.15254237288137,
+    gst: 117,
   },
   {
     id: 122,
@@ -1874,7 +1874,7 @@ export const DATA = [
     tags: ["black wired 3-5-mm condenser"],
     image: "/cropped/trustnova_product_122.jpg",
     rating: { rate: 3.7 },
-    gst: 655.9322033898305,
+    gst: 774,
   },
   {
     id: 123,
@@ -1887,7 +1887,7 @@ export const DATA = [
     tags: ["multicolor usb", "bluetooth tabletop", "portable"],
     image: "/cropped/trustnova_product_123.jpg",
     rating: { rate: 4.1 },
-    gst: 549.1525423728814,
+    gst: 648,
   },
   {
     id: 124,
@@ -1901,7 +1901,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_124.jpg",
     rating: { rate: 4.1 },
-    gst: 396.6101694915255,
+    gst: 468,
   },
   {
     id: 125,
@@ -1919,7 +1919,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_125.jpg",
     rating: { rate: 3.9 },
-    gst: 777.9661016949153,
+    gst: 918,
   },
   {
     id: 126,
@@ -1933,7 +1933,7 @@ export const DATA = [
     tags: ["black usb thermal-transfer print"],
     image: "/cropped/trustnova_product_126.jpg",
     rating: { rate: 3.6 },
-    gst: 1388.135593220339,
+    gst: 1638,
   },
   {
     id: 127,
@@ -1946,7 +1946,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_127.jpg",
     rating: { rate: 4.8 },
-    gst: 1372.8813559322034,
+    gst: 1620,
   },
   {
     id: 128,
@@ -1963,7 +1963,7 @@ export const DATA = [
     tags: ["black usb", "ethernet thermal-transfer print"],
     image: "/cropped/trustnova_product_128.jpg",
     rating: { rate: 3.2 },
-    gst: 762.7118644067797,
+    gst: 900,
   },
   {
     id: 129,
@@ -1981,7 +1981,7 @@ export const DATA = [
     tags: ["silver"],
     image: "/cropped/trustnova_product_129.jpg",
     rating: { rate: 4 },
-    gst: 135.76271186440678,
+    gst: 160.2,
   },
   {
     id: 130,
@@ -1999,7 +1999,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_130.jpg",
     rating: { rate: 3.6 },
-    gst: 3340.677966101695,
+    gst: 3942,
   },
   {
     id: 131,
@@ -2026,7 +2026,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_131.jpg",
     rating: { rate: 4 },
-    gst: 1677.9661016949153,
+    gst: 1980,
   },
   {
     id: 132,
@@ -2053,7 +2053,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_132.jpg",
     rating: { rate: 3.8 },
-    gst: 1189.8305084745762,
+    gst: 1404,
   },
   {
     id: 133,
@@ -2071,7 +2071,7 @@ export const DATA = [
     tags: ["black usb"],
     image: "/cropped/trustnova_product_133.jpg",
     rating: { rate: 4.2 },
-    gst: 35.08474576271186,
+    gst: 41.4,
   },
   {
     id: 134,
@@ -2088,7 +2088,7 @@ export const DATA = [
     tags: ["black hdmi", "usb 1920-x-1080", "full-hd ips flat 45916"],
     image: "/cropped/trustnova_product_134.jpg",
     rating: { rate: 4.1 },
-    gst: 1830.5084745762713,
+    gst: 2160,
   },
   {
     id: 135,
@@ -2106,7 +2106,7 @@ export const DATA = [
     tags: ["black hdmi", "display-port"],
     image: "/cropped/trustnova_product_135.jpg",
     rating: { rate: 4.2 },
-    gst: 3050.8474576271187,
+    gst: 3600,
   },
   {
     id: 136,
@@ -2123,7 +2123,7 @@ export const DATA = [
     tags: ["gray hdmi full-hd", "hd", "1920-x-1080 led indoors"],
     image: "/cropped/trustnova_product_136.jpg",
     rating: { rate: 3.7 },
-    gst: 915.2542372881356,
+    gst: 1080,
   },
   {
     id: 137,
@@ -2141,7 +2141,7 @@ export const DATA = [
     tags: ["multicolor hdmi", "display-port"],
     image: "/cropped/trustnova_product_137.jpg",
     rating: { rate: 3.4 },
-    gst: 4881.35593220339,
+    gst: 5760,
   },
   {
     id: 138,
@@ -2160,7 +2160,7 @@ export const DATA = [
     tags: ["black display-port", "hdmi"],
     image: "/cropped/trustnova_product_138.jpg",
     rating: { rate: 4.1 },
-    gst: 4271.186440677966,
+    gst: 5040,
   },
   {
     id: 139,
@@ -2178,7 +2178,7 @@ export const DATA = [
     tags: ["black display-port", "hdmi"],
     image: "/cropped/trustnova_product_139.jpg",
     rating: { rate: 4.3 },
-    gst: 3203.389830508475,
+    gst: 3780,
   },
   {
     id: 140,
@@ -2197,7 +2197,7 @@ export const DATA = [
     tags: ["white usb", "wired qwerty backlighting usb"],
     image: "/cropped/trustnova_product_140.jpg",
     rating: { rate: 4 },
-    gst: 183.05084745762713,
+    gst: 216,
   },
   {
     id: 141,
@@ -2215,7 +2215,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_141.jpg",
     rating: { rate: 4.4 },
-    gst: 152.54237288135593,
+    gst: 180,
   },
   {
     id: 142,
@@ -2232,7 +2232,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_142.jpg",
     rating: { rate: 3.2 },
-    gst: 686.4406779661017,
+    gst: 810,
   },
   {
     id: 143,
@@ -2249,7 +2249,7 @@ export const DATA = [
     tags: ["black hdmi", "usb ips flat 45916"],
     image: "/cropped/trustnova_product_143.jpg",
     rating: { rate: 4.1 },
-    gst: 3050.8474576271187,
+    gst: 3600,
   },
   {
     id: 144,
@@ -2271,7 +2271,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_144.jpg",
     rating: { rate: 3.5 },
-    gst: 518.6440677966101,
+    gst: 612,
   },
   {
     id: 145,
@@ -2289,7 +2289,7 @@ export const DATA = [
     tags: ["multicolor display-port", "hdmi"],
     image: "/cropped/trustnova_product_145.jpg",
     rating: { rate: 4.6 },
-    gst: 3203.389830508475,
+    gst: 3780,
   },
   {
     id: 146,
@@ -2306,7 +2306,7 @@ export const DATA = [
     tags: ["black tft", "lcd flat"],
     image: "/cropped/trustnova_product_146.jpg",
     rating: { rate: 4.2 },
-    gst: 213.5593220338983,
+    gst: 252,
   },
   {
     id: 147,
@@ -2325,7 +2325,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_147.jpg",
     rating: { rate: 4.1 },
-    gst: 183.05084745762713,
+    gst: 216,
   },
   {
     id: 148,
@@ -2339,7 +2339,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_148.jpg",
     rating: { rate: 4 },
-    gst: 183.05084745762713,
+    gst: 216,
   },
   {
     id: 149,
@@ -2352,7 +2352,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_149.jpg",
     rating: { rate: 3.7 },
-    gst: 488.135593220339,
+    gst: 576,
   },
   {
     id: 150,
@@ -2366,7 +2366,7 @@ export const DATA = [
     tags: ["black male-to-female hdmi", "3-5-mm", "usb"],
     image: "/cropped/trustnova_product_150.jpg",
     rating: { rate: 3.7 },
-    gst: 152.54237288135593,
+    gst: 180,
   },
   {
     id: 151,
@@ -2380,7 +2380,7 @@ export const DATA = [
     tags: ["black male-to-female hdmi", "usb"],
     image: "/cropped/trustnova_product_151.jpg",
     rating: { rate: 4 },
-    gst: 2425.423728813559,
+    gst: 2862,
   },
   {
     id: 152,
@@ -2394,7 +2394,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_152.jpg",
     rating: { rate: 3.9 },
-    gst: 1372.8813559322034,
+    gst: 1620,
   },
   {
     id: 153,
@@ -2408,7 +2408,7 @@ export const DATA = [
     tags: ["gray usb usb-3-1-gen-1", "usb-3-2-gen-1x1"],
     image: "/cropped/trustnova_product_153.jpg",
     rating: { rate: 3.4 },
-    gst: 61.016949152542374,
+    gst: 72,
   },
   {
     id: 154,
@@ -2422,7 +2422,7 @@ export const DATA = [
     tags: ["black hdmi", "usb vhf", "uhf tabletop", "portable usb"],
     image: "/cropped/trustnova_product_154.jpg",
     rating: { rate: 4.3 },
-    gst: 915.2542372881356,
+    gst: 1080,
   },
   {
     id: 155,
@@ -2436,7 +2436,7 @@ export const DATA = [
     tags: ["black usb", "hdmi lcd flat 45916"],
     image: "/cropped/trustnova_product_155.jpg",
     rating: { rate: 4.2 },
-    gst: 2288.135593220339,
+    gst: 2700,
   },
   {
     id: 156,
@@ -2450,7 +2450,7 @@ export const DATA = [
     tags: ["black hdmi", "usb 1920-x-1080", "full-hd lcd", "ips flat 45916"],
     image: "/cropped/trustnova_product_156.jpg",
     rating: { rate: 3.6 },
-    gst: 2059.322033898305,
+    gst: 2430,
   },
   {
     id: 157,
@@ -2464,7 +2464,7 @@ export const DATA = [
     tags: ["gray hdmi", "usb"],
     image: "/cropped/trustnova_product_157.jpg",
     rating: { rate: 4.3 },
-    gst: 1677.9661016949153,
+    gst: 1980,
   },
   {
     id: 158,
@@ -2478,7 +2478,7 @@ export const DATA = [
     tags: ["black 1366-x-768 led"],
     image: "/cropped/trustnova_product_158.jpg",
     rating: { rate: 4.2 },
-    gst: 762.7118644067797,
+    gst: 900,
   },
   {
     id: 159,
@@ -2492,7 +2492,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_159.jpg",
     rating: { rate: 4.2 },
-    gst: 427.1186440677966,
+    gst: 504,
   },
   {
     id: 160,
@@ -2505,7 +2505,7 @@ export const DATA = [
     tags: ["black led flat 45916"],
     image: "/cropped/trustnova_product_160.webp",
     rating: { rate: 4.5 },
-    gst: 1144.0677966101696,
+    gst: 1350,
   },
   {
     id: 161,
@@ -2518,7 +2518,7 @@ export const DATA = [
     tags: ["silver"],
     image: "/cropped/trustnova_product_161.jpg",
     rating: { rate: 3.9 },
-    gst: 91.52542372881356,
+    gst: 108,
   },
   {
     id: 162,
@@ -2532,7 +2532,7 @@ export const DATA = [
     tags: ["silver"],
     image: "/cropped/trustnova_product_162.jpg",
     rating: { rate: 4.1 },
-    gst: 274.5762711864407,
+    gst: 324,
   },
   {
     id: 163,
@@ -2545,7 +2545,7 @@ export const DATA = [
     tags: ["silver"],
     image: "/cropped/trustnova_product_163.jpg",
     rating: { rate: 4.2 },
-    gst: 228.8135593220339,
+    gst: 270,
   },
   {
     id: 164,
@@ -2559,7 +2559,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_164.webp",
     rating: { rate: 4.4 },
-    gst: 305.08474576271186,
+    gst: 360,
   },
   {
     id: 165,
@@ -2574,7 +2574,7 @@ export const DATA = [
     tags: ["black plastic", "fabric ac-powered"],
     image: "/cropped/trustnova_product_165.jpg",
     rating: { rate: 4.4 },
-    gst: 1372.8813559322034,
+    gst: 1620,
   },
   {
     id: 166,
@@ -2596,7 +2596,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_166.jpg",
     rating: { rate: 4.2 },
-    gst: 457.6271186440678,
+    gst: 540,
   },
   {
     id: 167,
@@ -2610,7 +2610,7 @@ export const DATA = [
     tags: ["gray"],
     image: "/cropped/trustnova_product_167.jpg",
     rating: { rate: 3.7 },
-    gst: 1525.4237288135594,
+    gst: 1800,
   },
   {
     id: 168,
@@ -2625,7 +2625,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_168.jpg",
     rating: { rate: 4 },
-    gst: 915.2542372881356,
+    gst: 1080,
   },
   {
     id: 169,
@@ -2640,7 +2640,7 @@ export const DATA = [
     tags: ["black internal"],
     image: "/cropped/trustnova_product_169.jpg",
     rating: { rate: 3.6 },
-    gst: 1220.3389830508474,
+    gst: 1440,
   },
   {
     id: 170,
@@ -2663,7 +2663,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_170.jpg",
     rating: { rate: 4.1 },
-    gst: 305.08474576271186,
+    gst: 360,
   },
   {
     id: 171,
@@ -2684,7 +2684,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_171.jpg",
     rating: { rate: 4.6 },
-    gst: 122.03389830508475,
+    gst: 144,
   },
   {
     id: 172,
@@ -2698,7 +2698,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_172.jpg",
     rating: { rate: 3.8 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 173,
@@ -2713,7 +2713,7 @@ export const DATA = [
     tags: ["black upholstered-padded polyester"],
     image: "/cropped/trustnova_product_173.jpg",
     rating: { rate: 4.2 },
-    gst: 1525.4237288135594,
+    gst: 1800,
   },
   {
     id: 174,
@@ -2732,7 +2732,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_174.jpg",
     rating: { rate: 3.9 },
-    gst: 457.6271186440678,
+    gst: 540,
   },
   {
     id: 175,
@@ -2746,7 +2746,7 @@ export const DATA = [
     tags: ["advanced-configuration black smd flash rigid"],
     image: "/cropped/trustnova_product_175.jpg",
     rating: { rate: 4.1 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 176,
@@ -2761,7 +2761,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_176.jpg",
     rating: { rate: 3.3 },
-    gst: 457.6271186440678,
+    gst: 540,
   },
   {
     id: 177,
@@ -2775,7 +2775,7 @@ export const DATA = [
     tags: ["black wi-fi battery-powered"],
     image: "/cropped/trustnova_product_177.jpg",
     rating: { rate: 4 },
-    gst: 305.08474576271186,
+    gst: 360,
   },
   {
     id: 178,
@@ -2790,7 +2790,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_178.jpg",
     rating: { rate: 3.4 },
-    gst: 76.27118644067797,
+    gst: 90,
   },
   {
     id: 179,
@@ -2805,7 +2805,7 @@ export const DATA = [
     tags: ["advanced-configuration white"],
     image: "/cropped/trustnova_product_179.jpg",
     rating: { rate: 4.8 },
-    gst: 305.08474576271186,
+    gst: 360,
   },
   {
     id: 180,
@@ -2820,7 +2820,7 @@ export const DATA = [
     tags: ["black lithium usb usb"],
     image: "/cropped/trustnova_product_180.jpg",
     rating: { rate: 3.4 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 181,
@@ -2835,7 +2835,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_181.jpg",
     rating: { rate: 4.3 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 182,
@@ -2850,7 +2850,7 @@ export const DATA = [
     tags: ["blue usb"],
     image: "/cropped/trustnova_product_182.jpg",
     rating: { rate: 4.1 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 183,
@@ -2865,7 +2865,7 @@ export const DATA = [
     tags: ["gray type-a", "type-c"],
     image: "/cropped/trustnova_product_183.jpg",
     rating: { rate: 4.5 },
-    gst: 152.54237288135593,
+    gst: 180,
   },
   {
     id: 184,
@@ -2880,7 +2880,7 @@ export const DATA = [
     tags: ["black portable"],
     image: "/cropped/trustnova_product_184.jpg",
     rating: { rate: 3.4 },
-    gst: 76.27118644067797,
+    gst: 90,
   },
   {
     id: 185,
@@ -2894,7 +2894,7 @@ export const DATA = [
     tags: ["blue"],
     image: "/cropped/trustnova_product_185.jpg",
     rating: { rate: 3.7 },
-    gst: 91.52542372881356,
+    gst: 108,
   },
   {
     id: 186,
@@ -2909,7 +2909,7 @@ export const DATA = [
     tags: ["blue"],
     image: "/cropped/trustnova_product_186.jpg",
     rating: { rate: 4.1 },
-    gst: 61.016949152542374,
+    gst: 72,
   },
   {
     id: 187,
@@ -2924,7 +2924,7 @@ export const DATA = [
     tags: ["gray"],
     image: "/cropped/trustnova_product_187.jpg",
     rating: { rate: 4.1 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
   {
     id: 188,
@@ -2939,7 +2939,7 @@ export const DATA = [
     tags: ["blue"],
     image: "/cropped/trustnova_product_188.jpg",
     rating: { rate: 3.5 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 189,
@@ -2954,7 +2954,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_189.jpg",
     rating: { rate: 4.4 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 190,
@@ -2969,7 +2969,7 @@ export const DATA = [
     tags: ["clear"],
     image: "/cropped/trustnova_product_190.jpg",
     rating: { rate: 3.8 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 191,
@@ -2984,7 +2984,7 @@ export const DATA = [
     tags: ["black synthetic"],
     image: "/cropped/trustnova_product_191.jpg",
     rating: { rate: 4.8 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 192,
@@ -2999,7 +2999,7 @@ export const DATA = [
     tags: ["multicolor"],
     image: "/cropped/trustnova_product_192.jpg",
     rating: { rate: 3.4 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 193,
@@ -3014,7 +3014,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_193.jpg",
     rating: { rate: 4.5 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 194,
@@ -3029,7 +3029,7 @@ export const DATA = [
     tags: ["black manual manual"],
     image: "/cropped/trustnova_product_194.jpg",
     rating: { rate: 4.4 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 195,
@@ -3044,7 +3044,7 @@ export const DATA = [
     tags: ["multicolor"],
     image: "/cropped/trustnova_product_195.jpg",
     rating: { rate: 3.8 },
-    gst: 15.254237288135593,
+    gst: 18,
   },
   {
     id: 196,
@@ -3059,7 +3059,7 @@ export const DATA = [
     tags: ["white"],
     image: "/cropped/trustnova_product_196.jpg",
     rating: { rate: 5.2 },
-    gst: 579.6610169491526,
+    gst: 684,
   },
   {
     id: 197,
@@ -3073,7 +3073,7 @@ export const DATA = [
     tags: ["red", "black"],
     image: "/cropped/trustnova_product_197.jpg",
     rating: { rate: 4.4 },
-    gst: 1220.3389830508474,
+    gst: 1440,
   },
   {
     id: 198,
@@ -3088,7 +3088,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_198.jpg",
     rating: { rate: 4.3 },
-    gst: 1876.271186440678,
+    gst: 2214,
   },
   {
     id: 199,
@@ -3111,7 +3111,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_199.jpg",
     rating: { rate: 4.3 },
-    gst: 2898.305084745763,
+    gst: 3420,
   },
   {
     id: 200,
@@ -3126,7 +3126,7 @@ export const DATA = [
     tags: ["black compact usb", "ethernet", "wi-fi", "hdmi ac-powered rdp"],
     image: "/cropped/trustnova_product_200.jpg",
     rating: { rate: 4.5 },
-    gst: 488.135593220339,
+    gst: 576,
   },
   {
     id: 201,
@@ -3142,7 +3142,7 @@ export const DATA = [
     tags: ["red biodegradable-materials", "polyester"],
     image: "/cropped/trustnova_product_201.jpg",
     rating: { rate: 3.6 },
-    gst: 99.15254237288137,
+    gst: 117,
   },
   {
     id: 202,
@@ -3170,7 +3170,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_202.jpg",
     rating: { rate: 3.5 },
-    gst: 1525.4237288135594,
+    gst: 1800,
   },
   {
     id: 203,
@@ -3192,7 +3192,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_203.jpg",
     rating: { rate: 4.3 },
-    gst: 289.8305084745763,
+    gst: 342,
   },
   {
     id: 204,
@@ -3206,7 +3206,7 @@ export const DATA = [
     tags: ["multicolor wired qwerty backlighting usb"],
     image: "/cropped/trustnova_product_204.jpg",
     rating: { rate: 3.9 },
-    gst: 61.016949152542374,
+    gst: 72,
   },
   {
     id: 205,
@@ -3224,7 +3224,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_205.jpg",
     rating: { rate: 4.6 },
-    gst: 381.35593220338984,
+    gst: 450,
   },
   {
     id: 206,
@@ -3238,7 +3238,7 @@ export const DATA = [
     tags: ["black", "white mouse", "keyboard"],
     image: "/cropped/trustnova_product_206.png",
     rating: { rate: 3.7 },
-    gst: 213.5593220338983,
+    gst: 252,
   },
   {
     id: 207,
@@ -3252,7 +3252,7 @@ export const DATA = [
     tags: ["unshielded-utp black", "blue vga"],
     image: "/cropped/trustnova_product_207.png",
     rating: { rate: 3.4 },
-    gst: 68.64406779661017,
+    gst: 81,
   },
   {
     id: 208,
@@ -3267,7 +3267,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_208.jpg",
     rating: { rate: 4.1 },
-    gst: 91.52542372881356,
+    gst: 108,
   },
   {
     id: 209,
@@ -3281,7 +3281,7 @@ export const DATA = [
     tags: ["black wireless usb plastic usb"],
     image: "/cropped/trustnova_product_209.png",
     rating: { rate: 3.8 },
-    gst: 259.32203389830505,
+    gst: 306,
   },
   {
     id: 210,
@@ -3296,7 +3296,7 @@ export const DATA = [
     tags: ["white", "black ethernet"],
     image: "/cropped/trustnova_product_210.png",
     rating: { rate: 4 },
-    gst: 38.13559322033898,
+    gst: 45,
   },
   {
     id: 211,
@@ -3316,7 +3316,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_211.png",
     rating: { rate: 4.1 },
-    gst: 838.9830508474577,
+    gst: 990,
   },
   {
     id: 212,
@@ -3331,7 +3331,7 @@ export const DATA = [
     tags: ["braided-stp black usb", "micro-usb"],
     image: "/cropped/trustnova_product_212.jpg",
     rating: { rate: 4.4 },
-    gst: 114.40677966101696,
+    gst: 135,
   },
   {
     id: 213,
@@ -3345,7 +3345,7 @@ export const DATA = [
     tags: ["black"],
     image: "/cropped/trustnova_product_213.jpg",
     rating: { rate: 4.6 },
-    gst: 91.52542372881356,
+    gst: 108,
   },
   {
     id: 214,
@@ -3360,7 +3360,7 @@ export const DATA = [
     tags: ["black hdmi", "usb hdmi", "usb usb-type-a usb usb hdmi"],
     image: "/cropped/trustnova_product_214.png",
     rating: { rate: 4.5 },
-    gst: 274.5762711864407,
+    gst: 324,
   },
   {
     id: 215,
@@ -3374,7 +3374,7 @@ export const DATA = [
     tags: ["black usb usb"],
     image: "/cropped/trustnova_product_215.jpg",
     rating: { rate: 4.3 },
-    gst: 137.28813559322035,
+    gst: 162,
   },
   {
     id: 216,
@@ -3388,7 +3388,7 @@ export const DATA = [
     tags: ["multicolor usb usb usb-3-1-gen-1", "usb-2-0"],
     image: "/cropped/trustnova_product_216.jpg",
     rating: { rate: 3.4 },
-    gst: 198.30508474576274,
+    gst: 234,
   },
   {
     id: 217,
@@ -3407,7 +3407,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_217.png",
     rating: { rate: 4.2 },
-    gst: 122.03389830508475,
+    gst: 144,
   },
   {
     id: 218,
@@ -3428,7 +3428,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_218.jpg",
     rating: { rate: 4.7 },
-    gst: 228.8135593220339,
+    gst: 270,
   },
   {
     id: 219,
@@ -3442,7 +3442,7 @@ export const DATA = [
     tags: ["black female-to-male hdmi"],
     image: "/cropped/trustnova_product_219.png",
     rating: { rate: 3.6 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 220,
@@ -3457,7 +3457,7 @@ export const DATA = [
     tags: ["nan"],
     image: "/cropped/trustnova_product_220.jpg",
     rating: { rate: 4 },
-    gst: 305.08474576271186,
+    gst: 360,
   },
   {
     id: 221,
@@ -3471,7 +3471,7 @@ export const DATA = [
     tags: ["multicolor"],
     image: "/cropped/trustnova_product_221.jpg",
     rating: { rate: 4.2 },
-    gst: 228.8135593220339,
+    gst: 270,
   },
   {
     id: 222,
@@ -3496,7 +3496,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_222.jpg",
     rating: { rate: 4.3 },
-    gst: 762.7118644067797,
+    gst: 900,
   },
   {
     id: 223,
@@ -3511,7 +3511,7 @@ export const DATA = [
     tags: ["black lithium-ion-li-ion usb usb"],
     image: "/cropped/trustnova_product_223.png",
     rating: { rate: 3.9 },
-    gst: 76.27118644067797,
+    gst: 90,
   },
   {
     id: 224,
@@ -3525,7 +3525,7 @@ export const DATA = [
     tags: ["black lithium-ion-li-ion usb usb"],
     image: "/cropped/trustnova_product_224.png",
     rating: { rate: 3.9 },
-    gst: 30.508474576271187,
+    gst: 36,
   },
   {
     id: 225,
@@ -3539,7 +3539,7 @@ export const DATA = [
     tags: ["black usb", "wired optical scroll-wheel usb"],
     image: "/cropped/trustnova_product_225.jpg",
     rating: { rate: 4.1 },
-    gst: 22.88135593220339,
+    gst: 27,
   },
   {
     id: 226,
@@ -3556,7 +3556,7 @@ export const DATA = [
     ],
     image: "/cropped/trustnova_product_226.jpg",
     rating: { rate: 3.6 },
-    gst: 122.03389830508475,
+    gst: 144,
   },
   {
     id: 227,
@@ -3570,6 +3570,6 @@ export const DATA = [
     tags: ["multicolor"],
     image: "/cropped/trustnova_product_227.jpg",
     rating: { rate: 3.6 },
-    gst: 45.76271186440678,
+    gst: 54,
   },
 ];

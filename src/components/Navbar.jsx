@@ -12,7 +12,13 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark sticky-top p-3"
+      style={{
+        backgroundColor: "#2D5D7B",
+        color: "white",
+      }}
+    >
       <div className="container d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center">
           <ul className="navbar-nav me-3">
@@ -42,8 +48,8 @@ const Navbar = () => {
           />
         </NavLink>
 
-        <div className="d-flex align-items-center">
-          <div className="buttons text-center">
+        <div>
+          <div style={{ display: "flex", gap: "10px" }}>
             <Popover
               placement="bottomLeft"
               open={value ? true : false}
@@ -68,18 +74,33 @@ const Navbar = () => {
                         .toLowerCase()
                         .includes(value.toLowerCase())
                     ).map((item) => (
-                      <div
-                        key={item.id}
-                        style={{ display: "flex", gap: "16px" }}
-                        className="cursor-pointer"
-                        onClick={() => {
-                          navigate("/product/" + item.id);
-                          setValue("");
-                        }}
-                      >
-                        <img src={item.image} alt="index" width="64px" />
-                        <div className="heading-3">{item.title} </div>
-                      </div>
+                      <>
+                        <div
+                          key={item.id}
+                          style={{ display: "flex", gap: "16px" }}
+                          className="cursor-pointer"
+                          onClick={() => {
+                            navigate("/product/" + item.id);
+                            setValue("");
+                          }}
+                        >
+                          <img
+                            src={item.image}
+                            alt="index"
+                            width="64px"
+                            height="64px"
+                          />
+                          <div className="heading-3">
+                            {item.title.substring(0, 100)}...
+                          </div>
+                        </div>
+                        <div
+                          style={{
+                            border: "1.5px solid rgba(234, 223, 223, 1)",
+                            borderRadius: "50%",
+                          }}
+                        ></div>
+                      </>
                     ))
                   ) : (
                     <div className="heading-3">no results for search</div>
@@ -87,20 +108,31 @@ const Navbar = () => {
                 </div>
               }
             >
-              <input
-                className="input"
-                value={value}
-                type="text"
-                name="search"
-                placeholder="Search.."
-                onChange={(e) => {
-                  setValue(e.target.value);
+              <div
+                style={{
+                  borderRadius: "6px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  gap: "8px",
                 }}
-              />
+              >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="🔍 Search.."
+                  aria-label="Search.."
+                  aria-describedby="basic-addon1"
+                  onChange={(e) => {
+                    setValue(e.target.value);
+                  }}
+                />
+              </div>
             </Popover>
 
-            <NavLink to="/cart" className="btn btn-outline-light m-1">
-              <i className="fa fa-cart-shopping me-1"></i> Cart ({state.length})
+            <NavLink to="/cart" className="btn-lg btn-outline-light ">
+              <i className="fa fa-cart-shopping me-1"></i>
+              <span style={{ textDecoration: "none" }}>({state.length})</span>
             </NavLink>
             <Popover
               placement="bottom"
@@ -138,7 +170,7 @@ const Navbar = () => {
                 </div>
               }
             >
-              <div className="btn btn-outline-light m-1">
+              <div className="btn-lg btn-outline-light">
                 <i className="fa-regular fa-user"></i>
               </div>
             </Popover>

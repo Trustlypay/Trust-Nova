@@ -1,12 +1,12 @@
 #root {
   color: white;
-  font-family: Lexend;
+  font-family: Figtree, Lexend;
   --white: #fff;
 }
 
 .custom-class {
   margin-top: 48px;
-  background-color: #000000;
+  background-color: #686868;
   color: #71717a;
 }
 
@@ -60,10 +60,7 @@
 .input[type="text"] {
   box-sizing: border-box;
   border-radius: 4px;
-  font-size: 15px;
-  background-color: white;
-  background-image: url("/public/assets/searchicon.png");
-  background-position: 3px;
-  background-repeat: no-repeat;
-  padding: 7px 7px 7px 25px;
+  font-size: 12px;
+  background-color: "#2D5D7B";
+  border: none;
 }

@@ -99,7 +99,13 @@ export default function App() {
           />
         </Routes>
         {token && (
-          <footer className="custom-class">
+          <footer
+            className="custom-class"
+            style={{
+              backgroundColor: "#2D5D7B",
+              color: "white",
+            }}
+          >
             <div className="custom-container">
               <div style={{ display: "flex", gap: "200px" }}>
                 <div
@@ -128,7 +134,7 @@ export default function App() {
                     gap: "16px",
                   }}
                 >
-                  <b> Quick Links</b>
+                  <i className="heading-3"> Quick Links</i>
                   <div
                     style={{
                       display: "flex",
