@@ -170,6 +170,7 @@ const Products = () => {
                     }}
                   />
                 </Link>
+
                 <div
                   onClick={() => {
                     navigate("/product/" + product.id);
