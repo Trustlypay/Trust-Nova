@@ -52,7 +52,6 @@ const Navbar = () => {
           <div style={{ display: "flex", gap: "10px" }}>
             <Popover
               placement="bottomLeft"
-              open={value ? true : false}
               content={
                 <div
                   style={{
@@ -60,7 +59,7 @@ const Navbar = () => {
                     flexDirection: "column",
                     gap: "6px",
                     padding: "18px",
-                    height: "600px",
+                    maxHeight: "600px",
                     overflow: "auto",
                   }}
                 >
@@ -69,14 +68,18 @@ const Navbar = () => {
                       filteredItem.title
                         .toLowerCase()
                         .includes(value.toLowerCase()) ||
-                      filteredItem.tags.map((tagItem) =>
+                      filteredItem.tags.some((tagItem) =>
                         tagItem.toLowerCase().includes(value.toLowerCase())
                       )
                   ).length > 0 ? (
-                    DATA.filter((filteredItem) =>
-                      filteredItem.title
-                        .toLowerCase()
-                        .includes(value.toLowerCase())
+                    DATA.filter(
+                      (filteredItem) =>
+                        filteredItem.title
+                          .toLowerCase()
+                          .includes(value.toLowerCase()) ||
+                        filteredItem.tags.some((tagItem) =>
+                          tagItem.toLowerCase().includes(value.toLowerCase())
+                        )
                     ).map((item) => (
                       <>
                         <div
@@ -84,8 +87,8 @@ const Navbar = () => {
                           style={{ display: "flex", gap: "16px" }}
                           className="cursor-pointer"
                           onClick={() => {
-                            navigate("/product/" + item.id);
                             setValue("");
+                            navigate("/product/" + item.id);
                           }}
                         >
                           <img
@@ -122,6 +125,7 @@ const Navbar = () => {
                 }}
               >
                 <input
+                  value={value}
                   type="text"
                   class="form-control"
                   placeholder="🔍 Search.."
