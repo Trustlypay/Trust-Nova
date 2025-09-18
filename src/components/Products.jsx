@@ -183,6 +183,9 @@ const Products = () => {
                   <div className="heading-2">
                     ₹ {product.price?.toLocaleString("en-IN")}
                   </div>
+                  <div style={{ fontSize: "11px" }}>
+                    *Inclusive of all taxes
+                  </div>
                 </div>
                 <div
                   style={{

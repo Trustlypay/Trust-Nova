@@ -107,7 +107,13 @@ export default function App() {
             }}
           >
             <div className="custom-container">
-              <div style={{ display: "flex", gap: "200px" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "100%",
+                }}
+              >
                 <div
                   style={{
                     display: "flex",
@@ -126,99 +132,121 @@ export default function App() {
                   <p>Phone: +91-8247 648 184</p>
                   <p>Email: info@trustnova.com</p>
                 </div>
-
                 <div
                   style={{
                     display: "flex",
-                    flexDirection: "column",
-                    gap: "16px",
+                    gap: "48px",
                   }}
                 >
-                  <i className="heading-3"> Quick Links</i>
                   <div
                     style={{
                       display: "flex",
                       flexDirection: "column",
-                      gap: "14px",
+                      gap: "16px",
                     }}
                   >
+                    <i className="heading-3"> Quick Links</i>
                     <div
-                      className="hover-underline cursor-pointer"
-                      onClick={() => {
-                        navigate("/product");
-                        window.scrollTo({ top: 0, behavior: "instant" });
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "14px",
                       }}
                     >
-                      Products
+                      <div
+                        className="hover-underline cursor-pointer"
+                        onClick={() => {
+                          navigate("/product");
+                          window.scrollTo({ top: 0, behavior: "instant" });
+                        }}
+                      >
+                        Products
+                      </div>
+                      <div
+                        className="hover-underline  cursor-pointer"
+                        onClick={() => {
+                          navigate("/contact-us");
+                          window.scrollTo({ top: 0, behavior: "instant" });
+                        }}
+                      >
+                        Contact Us
+                      </div>
                     </div>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "16px",
+                    }}
+                  >
+                    <i className="heading-3"> Terms and Policies</i>
                     <div
-                      className="hover-underline  cursor-pointer"
-                      onClick={() => {
-                        navigate("/contact-us");
-                        window.scrollTo({ top: 0, behavior: "instant" });
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "14px",
                       }}
                     >
-                      Contact Us
-                    </div>
-                    <div
-                      className="hover-underline cursor-pointer"
-                      onClick={() => {
-                        navigate("/terms-of-service");
-                        window.scrollTo({ top: 0, behavior: "instant" });
-                      }}
-                    >
-                      Terms of Service
-                    </div>
-                    <div
-                      className="hover-underline cursor-pointer"
-                      onClick={() => {
-                        navigate("/shipping-policy");
-                        window.scrollTo({ top: 0, behavior: "instant" });
-                      }}
-                    >
-                      Shipping Policy
-                    </div>{" "}
-                    <div
-                      className="hover-underline cursor-pointer"
-                      onClick={() => {
-                        navigate("/refund-policy");
-                        window.scrollTo({ top: 0, behavior: "instant" });
-                      }}
-                    >
-                      Refund Policy
-                    </div>
-                    <div
-                      className="hover-underline cursor-pointer"
-                      onClick={() => {
-                        navigate("/cancellation-policy");
-                        window.scrollTo({ top: 0, behavior: "instant" });
-                      }}
-                    >
-                      Cancellation Policy
-                    </div>
-                    <div
-                      className="hover-underline cursor-pointer"
-                      onClick={() => {
-                        navigate("/data-retention-policy");
-                        window.scrollTo({ top: 0, behavior: "instant" });
-                      }}
-                    >
-                      Data Retention Policy
+                      <div
+                        className="hover-underline cursor-pointer"
+                        onClick={() => {
+                          navigate("/terms-of-service");
+                          window.scrollTo({ top: 0, behavior: "instant" });
+                        }}
+                      >
+                        Terms of Service
+                      </div>
+                      <div
+                        className="hover-underline cursor-pointer"
+                        onClick={() => {
+                          navigate("/shipping-policy");
+                          window.scrollTo({ top: 0, behavior: "instant" });
+                        }}
+                      >
+                        Shipping Policy
+                      </div>{" "}
+                      <div
+                        className="hover-underline cursor-pointer"
+                        onClick={() => {
+                          navigate("/refund-policy");
+                          window.scrollTo({ top: 0, behavior: "instant" });
+                        }}
+                      >
+                        Refund Policy
+                      </div>
+                      <div
+                        className="hover-underline cursor-pointer"
+                        onClick={() => {
+                          navigate("/cancellation-policy");
+                          window.scrollTo({ top: 0, behavior: "instant" });
+                        }}
+                      >
+                        Cancellation Policy
+                      </div>
+                      <div
+                        className="hover-underline cursor-pointer"
+                        onClick={() => {
+                          navigate("/data-retention-policy");
+                          window.scrollTo({ top: 0, behavior: "instant" });
+                        }}
+                      >
+                        Data Retention Policy
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <hr />
+            <hr style={{ marginBottom: "0" }} />
             <div
               style={{
                 display: "flex",
                 justifyContent: "center",
-                gap: "10px",
-                padding: "10px",
+                padding: "1.5%",
               }}
             >
-              <small>© 2025,Trust Nova </small>
+              <small>© 2025 - TrustNova</small>
             </div>
           </footer>
         )}

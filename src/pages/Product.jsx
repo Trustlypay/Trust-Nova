@@ -99,12 +99,15 @@ const Product = () => {
               style={{
                 display: "flex",
                 justifyContent: "space-between",
-                alignItems: "flex-end",
+                alignItems: "center",
               }}
             >
-              <h3 className="display-4  my-4">
-                ₹{product.price?.toLocaleString("en-IN")}
-              </h3>{" "}
+              <div className="my-4">
+                <h3 className="display-4">
+                  ₹{product.price?.toLocaleString("en-IN")}
+                </h3>
+                <div style={{ fontSize: "16px" }}>*Inclusive of all taxes</div>
+              </div>
               <p
                 className="lead"
                 style={{
@@ -235,6 +238,9 @@ const Product = () => {
                     <div>
                       <div className="heading-2">
                         ₹ {item.price?.toLocaleString("en-IN")}
+                      </div>
+                      <div style={{ fontSize: "8px" }}>
+                        *Inclusive of all taxes
                       </div>
                     </div>
                     <div
