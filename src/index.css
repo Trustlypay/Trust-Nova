@@ -54,7 +54,7 @@
 }
 
 .margin {
-  margin: auto 200px;
+  margin: 5% 20%;
 }
 
 .input[type="text"] {
@@ -63,4 +63,14 @@
   font-size: 12px;
   background-color: "#2D5D7B";
   border: none;
+}
+
+.button-color {
+  background-color: #2d5d7b;
+  color: white;
+}
+
+.button-color:hover {
+  background-color: white;
+  color: #2d5d7b;
 }

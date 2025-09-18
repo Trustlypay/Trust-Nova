@@ -73,6 +73,7 @@ const Product = () => {
             alignItems: "center",
             justifyContent: "space-between",
             padding: "0px 5%",
+            minHeight: "100vh",
             backgroundColor: "#fff",
             color: "#000",
           }}
@@ -131,15 +132,17 @@ const Product = () => {
               ))}
             </div>
             <br />
-            <button
-              className="btn btn-outline-dark"
-              onClick={() => addProduct(product)}
-            >
-              Add to Cart
-            </button>
-            <Link to="/cart" className="btn btn-dark mx-3">
-              Go to Cart
-            </Link>
+            <div style={{ display: "flex" }}>
+              <button
+                className="btn-lg btn-dark"
+                onClick={() => addProduct(product)}
+              >
+                Add to Cart
+              </button>
+              <Link to="/cart" className="btn btn-outline-dark btn-lg mx-3">
+                Go to Cart
+              </Link>
+            </div>
           </div>
         </div>
       </>
@@ -174,11 +177,13 @@ const Product = () => {
 
     return (
       <>
-        <div className="py-4 my-4">
+        <div>
           <div
             style={{
               display: "flex",
               gap: "24px",
+              marginRight: "24px",
+              width: "auto",
             }}
           >
             {similarProducts.map((item) => {

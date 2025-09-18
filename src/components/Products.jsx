@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addCart } from "../redux/action";
+import SortIcon from "@mui/icons-material/Sort";
 
 import "react-loading-skeleton/dist/skeleton.css";
 
@@ -35,10 +36,16 @@ const Products = () => {
         {location.pathname === "/product" && (
           <>
             <div style={{ textAlign: "end" }}>
-              Sort by{" "}
+              <SortIcon fontSize="large" />
               <select
                 value={selectedValue}
-                style={{ width: "200px" }}
+                style={{
+                  marginLeft: "16px",
+                  width: "200px",
+                  padding: "10px",
+                  border: "none",
+                  borderRadius: "6px",
+                }}
                 onChange={(e) => {
                   setSelectedValue(e.target.value);
                   if (e.target.value === "a-z") {
@@ -89,8 +96,8 @@ const Products = () => {
               <button
                 className={
                   filterSelected === "All"
-                    ? "btn btn-primary btn-sm"
-                    : "btn btn-outline-light btn-sm m-2"
+                    ? "btn  button-color"
+                    : "btn btn-outline-light m-2"
                 }
                 onClick={() => {
                   setFilter(DATA);
@@ -99,100 +106,29 @@ const Products = () => {
               >
                 All
               </button>
-              <button
-                className={
-                  filterSelected === "Video - Cameras, Adapters"
-                    ? "btn btn-primary btn-sm"
-                    : "btn btn-outline-light btn-sm m-2"
-                }
-                onClick={() => filterProduct("Video - Cameras, Adapters")}
-              >
-                Video - Cameras, Adapters
-              </button>
-              <button
-                className={
-                  filterSelected === "Power Adapters, Extentions & Chargers"
-                    ? "btn btn-primary btn-sm"
-                    : "btn btn-outline-light btn-sm m-2"
-                }
-                onClick={() =>
-                  filterProduct("Power Adapters, Extentions & Chargers")
-                }
-              >
-                Power Adapters, Extentions & Chargers
-              </button>
-
-              <button
-                className={
-                  filterSelected === "USB, Wires, Cables, Adapters"
-                    ? "btn btn-primary btn-sm"
-                    : "btn btn-outline-light btn-sm m-2"
-                }
-                onClick={() => filterProduct("USB, Wires, Cables, Adapters")}
-              >
-                USB, Wires, Cables, Adapters
-              </button>
-              <button
-                className={
-                  filterSelected ===
-                  "Audio - Speakers, Headphones, Microphones & Accessories"
-                    ? "btn btn-primary btn-sm"
-                    : "btn btn-outline-light btn-sm m-2"
-                }
-                onClick={() =>
-                  filterProduct(
-                    "Audio - Speakers, Headphones, Microphones & Accessories"
-                  )
-                }
-              >
-                Audio - Speakers, Headphones, Microphones & Accessories
-              </button>
-
-              <button
-                className={
-                  filterSelected ===
-                  "Computer & Computer Accessories, Components, Peripherals"
-                    ? "btn btn-primary btn-sm"
-                    : "btn btn-outline-light btn-sm m-2"
-                }
-                onClick={() =>
-                  filterProduct(
-                    "Computer & Computer Accessories, Components, Peripherals"
-                  )
-                }
-              >
-                Computer & Computer Accessories, Components, Peripherals
-              </button>
-              <button
-                className={
-                  filterSelected === "Gaming"
-                    ? "btn btn-primary btn-sm"
-                    : "btn btn-outline-light btn-sm m-2"
-                }
-                onClick={() => filterProduct("Gaming")}
-              >
-                Gaming
-              </button>
-              <button
-                className={
-                  filterSelected === "Electronic Components"
-                    ? "btn btn-primary btn-sm"
-                    : "btn btn-outline-light btn-sm m-2"
-                }
-                onClick={() => filterProduct("Electronic Components")}
-              >
-                Electronic Components
-              </button>
-              <button
-                className={
-                  filterSelected === "Electronics"
-                    ? "btn btn-primary btn-sm"
-                    : "btn btn-outline-light btn-sm m-2"
-                }
-                onClick={() => filterProduct("Electronics")}
-              >
-                Electronics
-              </button>
+              {[
+                "Video - Cameras, Adapters",
+                "Power Adapters, Extentions & Chargers",
+                "USB, Wires, Cables, Adapters",
+                "Gaming",
+                "Electronics",
+                "Audio - Speakers, Headphones, Microphones & Accessories",
+                "Computer & Computer Accessories, Components, Peripherals",
+                "Electronic Components",
+              ].map((mapItem) => {
+                return (
+                  <button
+                    className={
+                      filterSelected === mapItem
+                        ? "btn button-color"
+                        : "btn btn-outline-light m-2"
+                    }
+                    onClick={() => filterProduct(mapItem)}
+                  >
+                    {mapItem}
+                  </button>
+                );
+              })}
             </div>
           </>
         )}
